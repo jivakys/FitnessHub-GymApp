@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness-Hub | Workout</title>
+    <link rel="icon" href="../imgs/logo/logo.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/userDashboard.css">
+</head>
+
+<body>
+    <div id="loding_container">
+        <div id="loding_div">
+          <img src="../imgs/loding.gif" alt="" srcset="">
+          <h2>Please Wait...</h2>
+        </div>
+      </div>
+    <header class="header">
+        <a href="#" class="logo"> <img src="../imgs/logo.png" alt="logo"></a>
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <nav class="navbar">
+            <a href="./userDashboard.html" id="user_name"></a>
+            <a href="./userDashboard.html">My Classses</a>
+            <a href="./userSearchClass.html">Class Search</a>
+            <a href="../index.html" onclick="logoutFun()">Log out</a>
+          </nav>
+      </header>
+    <div id="clientinfo"> 
+    </div>
+    <div id="yourclasses">
+        <h4>Your Classses</h4>
+    </div>
+  
+    <div id="temp"> 
+                    <div id='datetimepicker1' ></div> 
+
+             <div id="cardcontainer">
+             </div>
+       
+    </div>
+    <script>
+        $(function () {
+            $('#datetimepicker1').datetimepicker({
+                inline: true,
+            });
+        });
+    </script>
+    <script>
+        w3.slideshow(".nature");
+        </script>
+</body>
+
+</html>
+<script>
+    function logoutFun() {
+        sessionStorage.clear();
+    }
+</script>
+<script type="module" src="../js/userDashboard.js"></script>
+<!-- //userDashboard here// -->
