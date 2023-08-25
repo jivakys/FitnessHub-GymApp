@@ -48,10 +48,10 @@ $(document).ready(function () {
 
 const onSignUp = () => {
   const payload = {
-    name: document.querySelector("#name").value,
-    email: document.querySelector("#email").value,
-    password: document.querySelector("#password").value,
-    role: document.querySelector("#role").value,
+    name: document.querySelector("#signName").value,
+    email: document.querySelector("#signupEmail").value,
+    password: document.querySelector("#signupPassword").value,
+    role: document.querySelector("#signupRole").value,
   };
   console.log(payload);
   if (
@@ -68,8 +68,7 @@ const onSignUp = () => {
 
     return;
   }
-
-  fetch("http://localhost:4000/user/register", {
+  fetch("http://localhost:4400/user/register", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -79,7 +78,7 @@ const onSignUp = () => {
     .then((res) => res.json())
     .then((res) => {
       console.log("user is register", res);
-      Swal.fire("Good job", "User Registered", "success");
+      Swal.fire("Good job", "User Registered Successful", "success");
 
       setTimeout(() => {
         window.location = "login.html";
@@ -98,68 +97,66 @@ const onSignUp = () => {
 //   window.location = "https://rich-plum-barracuda-fez.cyclic.app/auth/google";
 // });
 
-// const onLogin = () => {
-//   const payload = {
-//     email: document.getElementById("login-email").value,
-//     password: document.getElementById("login-password").value,
-//   };
-//   if (payload.email == "" || payload.password == "") {
-//     Swal.fire({
-//       icon: "error",
-//       title: "Oops...",
-//       text: "Please fill all the details....",
-//     });
+const onLogin = () => {
+  const payload = {
+    email: document.getElementById("login-email").value,
+    password: document.getElementById("login-password").value,
+  };
+  if (payload.email == "" || payload.password == "") {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Please fill all the details....",
+    });
 
-//     return;
-//   }
+    return;
+  }
 
-//   if (payload.email == "admin@gmail.com" || payload.pass == "admin") {
-//     Swal.fire("Welcome Admin !!", "You Loggged in", "success");
-//     setTimeout(() => {
-//       window.location.href = "adminDashboard.html";
-//     }, 2000);
-//     return;
-//   }
+  // if (payload.email == "admin@gmail.com" || payload.pass == "admin") {
+  //   Swal.fire("Welcome Admin !!", "You Loggged in", "success");
+  //   setTimeout(() => {
+  //     window.location.href = "adminDashboard.html";
+  //   }, 2000);
+  //   return;
+  // }
 
-//   loding_container.style.display = "block";
-//   fetch("https://rich-plum-barracuda-fez.cyclic.app/user/login", {
-//     method: "POST",
-//     headers: {
-//       "Content-type": "application/json",
-//     },
-//     body: JSON.stringify(payload),
-//   })
-//     .then((res) => res.json())
-//     .then((res) => {
-//       loding_container.style.display = "none";
-//       console.log(res);
-//       if (res.OK == false) {
-//         Swal.fire({
-//           icon: "error",
-//           title: "Oops...",
-//           text: `${res.message || res.error}`,
-//         });
+  fetch("http://localhost:4400/user/login", {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  })
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      if (res.OK == false) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${res.message || res.error}`,
+        });
 
-//         setTimeout(() => {
-//           window.location.href = "signup.html";
-//         }, 4000);
+        setTimeout(() => {
+          window.location.href = "signup.html";
+        }, 1000);
 
-//         return;
-//       }
-//       sessionStorage.setItem("loggedInUser", JSON.stringify(res.user));
+        return;
+      }
+      sessionStorage.setItem("loggedInUser", JSON.stringify(res.user));
 
-//       Swal.fire("Good job", "You Loggged in", "success");
+      Swal.fire("Good job", "You Loggged in", "success");
 
-//       setTimeout(() => {
-//         if (res.message == "Trainer Logged In") {
-//           window.location.href = "trainerDashboard.html";
-//         } else {
-//           window.location.href = "userDashboard.html";
-//         }
-//       }, 2000);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       loding_container.style.display = "none";
-//     });
-// };
+      setTimeout(() => {
+        if (res.message == "Trainer Logged In") {
+          window.location.href = "index.html";
+        } else {
+          window.location.href = "index.html";
+        }
+      }, 2000);
+    })
+    .catch((err) => {
+      console.log(err);
+      // loding_container.style.display = "none";
+    });
+};
