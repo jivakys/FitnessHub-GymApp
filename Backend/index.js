@@ -22,7 +22,6 @@ app.get("/",(req,res)=>{
     res.send("Base Endpoint Of API")
 })
 app.use("/user",userRouter);
-// app.use("/class",classesRouter);
 app.use("/admin", dashboardRouter);
 //.......api routes end here.........//
 
