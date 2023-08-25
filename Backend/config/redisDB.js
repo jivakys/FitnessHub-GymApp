@@ -1,4 +1,4 @@
-// all redis here......
+
 const redis = require("redis")
 require("dotenv").config();
 
@@ -19,3 +19,4 @@ client.on("connect", () => {
   console.log("Connected to the Redis Cloud DB");
 });
 module.exports={client}
+

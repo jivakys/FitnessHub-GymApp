@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainer Dashboard</title>
+    <link rel="icon" href="../images/Fitness-Hub-Logo.jpg" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/trainerDashboard.css" />
+  </head>
+
+  <body>
+    <div id="loding_container">
+      <div id="loding_div">
+        <img src="../images/loding.gif" alt="loading..." srcset="" />
+        <h2>Please Wait...</h2>
+      </div>
+    </div>
+
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="../images/Fitness-Hub-Logo.jpg" alt="logo"
+      /></a>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="#">All Classes</a>
+        <a href="./trainerDashboard.html" id="user_name">Trainer's Dashboard</a>
+        <a href="./createClass.html">Create Fitness Class</a>
+        <a href="" onclick="logoutFun()">Log out</a>
+      </nav>
+    </header>
+    <section id="dashboard">
+      <div id="title">
+        <h2>Trainer's Dashboard</h2>
+      </div>
+      <div id="Info">
+        <div class="cardBox">
+          <div class="card">
+            <div id="profimgdiv">
+              <img
+                src="https://media.istockphoto.com/id/1397556857/vector/avatar-13.jpg?s=612x612&w=0&k=20&c=n4kOY_OEVVIMkiCNOnFbCxM0yQBiKVea-ylQG62JErI="
+                alt=""
+                id="profileimg"
+              />
+              <div id="clientnamediv">
+                <p id="userInfo">Hi,</p>
+                <p>Welcome back - Let's get Started!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers" id="total-class">0</div>
+              <div class="cardName">My classes</div>
+            </div>
+            <div>
+              <a href="./createClass.html"
+                ><button class="btn">Create New Class</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ................................................List Classes ...........................................................-->
+
+    <section>
+      <h1 class="heading"><span>Classes</span></h1>
+    </section>
+
+    <section class="class-list-section">
+      <!-- Page wrapper/Container Section -->
+      <div class="container">
+        <!-- Responsive Table Section -->
+        <table class="responsive-table">
+          <!-- Responsive Table Header Section -->
+          <thead class="responsive-table__head">
+            <tr class="responsive-table__row">
+              <th
+                class="responsive-table__head__title responsive-table__head__title--name"
+              >
+                Class Name
+              </th>
+              <th
+                class="responsive-table__head__title responsive-table__head__title--price"
+              >
+                Price
+              </th>
+              <th
+                class="responsive-table__head__title responsive-table__head__title--seats"
+              >
+                Seats
+              </th>
+              <th
+                class="responsive-table__head__title responsive-table__head__title--date"
+              >
+                Date/Time
+              </th>
+              <th
+                class="responsive-table__head__title responsive-table__head__title--venue"
+              >
+                Venue
+              </th>
+              <th
+                class="responsive-table__head__title responsive-table__head__title--delete"
+              >
+                Options
+              </th>
+              <!-- <th class="responsive-table__head__title responsive-table__head__title--update">Update</th>
+                <th class="responsive-table__head__title responsive-table__head__title--details">Details</th> -->
+            </tr>
+          </thead>
+          <!-- Responsive Table Body Section -->
+          <tbody class="responsive-table__body">
+            <tr class="responsive-table__row">
+              <td
+                class="responsive-table__body__text responsive-table__body__text--name"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--price"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--seats"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--date"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--venue"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--delete"
+              >
+                <button class="cancel-btn">Cancel</button>
+              </td>
+            </tr>
+
+            <tr class="responsive-table__row">
+              <td
+                class="responsive-table__body__text responsive-table__body__text--name"
+              >
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg"
+                  class="user-icon"
+                />
+              </td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--price"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--seats"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--date"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--venue"
+              ></td>
+              <td
+                class="responsive-table__body__text responsive-table__body__text--delete"
+              >
+                <button class="cancel-btn">Cancel</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="links" href="#home">home</a>
+          <a class="links" href="#about">about</a>
+          <a class="links" href="#features">features</a>
+          <a class="links" href="#pricing">pricing</a>
+          <a class="links" href="#trainers">trainers</a>
+          <a class="links" href="#appointment">appointment</a>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p>monday : <i> 7:00am - 10:30pm </i></p>
+          <p>tuesday : <i> 7:00am - 10:30pm </i></p>
+          <p>wednesday : <i> 7:00am - 10:30pm </i></p>
+          <p>friday : <i> 7:00am - 10:30pm </i></p>
+          <p>saturday : <i> 7:00am - 10:30pm </i></p>
+          <p>sunday : <i> closed </i></p>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890</p>
+          <p><i class="fas fa-phone"></i> +111-222-3333</p>
+          <p><i class="fas fa-envelope"></i> Masaischool@gmail.com</p>
+          <p><i class="fas fa-map"></i> Noida, india - 400104</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Newsletter</h3>
+          <p>Subscribe for latest updates ❤️</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              class="email"
+              placeholder="enter your email"
+              id=""
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../scripts/trainerDashboard.js"></script>
+  </body>
+</html>

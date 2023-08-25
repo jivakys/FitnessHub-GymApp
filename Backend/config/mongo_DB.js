@@ -1,9 +1,9 @@
-const mongoose=require('mongoose');
-require('dotenv').config();
-mongoose.set('strictQuery',false);
+const mongoose = require("mongoose");
+require("dotenv").config();
+mongoose.set("strictQuery", false);
 
-const connection=mongoose.connect(process.env.mongourl);
+const connection = mongoose.connect(process.env.mongourl);
 
-module.exports={
-    connection
-}
+module.exports = {
+  connection,
+};
