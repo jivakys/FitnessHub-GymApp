@@ -1,4 +1,4 @@
-let url = "http://localhost:3456/";
+let url = "http://localhost:3456";
 
 let boxContainer = document.querySelector("#trainers .box-container");
 
@@ -8,7 +8,7 @@ async function getTrainerData() {
   try {
     let res = await fetch(`${url}/alltrainer`);
     let data = await res.json();
-    console.log(data);
+    console.log("trainerData", data);
     displayTrainerData(data.trainers);
   } catch (error) {
     console.log(error);
@@ -24,9 +24,9 @@ function displayTrainerData(data) {
         .map((elem) => {
           return `
         <div class="box">
-            <img src=https://img.freepik.com/free-photo/young-sports-people-training-morning-gym_1157-28954.jpg alt="">
+            <img src=https://im.rediff.com/getahead/2018/dec/28sonali-swami2.jpg?w=670&h=900 alt="">
             <div class="content">
-                <span>expert trainer</span>
+                <span>Personal Trainer</span>
                 <h3>${elem.name}</h3>
                 <a href="../html/login.html" class="btn" data-id=${elem._id}>Book Appointment</a>
                 <div class="share">

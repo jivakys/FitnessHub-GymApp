@@ -68,7 +68,7 @@ const onSignUp = () => {
 
     return;
   }
-  fetch("http://localhost:4400/user/register", {
+  fetch("http://localhost:3456/user/register", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -120,7 +120,7 @@ const onLogin = () => {
   //   return;
   // }
 
-  fetch("http://localhost:4400/user/login", {
+  fetch("http://localhost:3456/user/login", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -139,7 +139,7 @@ const onLogin = () => {
 
         setTimeout(() => {
           window.location.href = "signup.html";
-        }, 1000);
+        }, 4000);
 
         return;
       }
@@ -149,7 +149,7 @@ const onLogin = () => {
 
       setTimeout(() => {
         if (res.message == "Trainer Logged In") {
-          window.location.href = "index.html";
+          window.location.href = "trainerDashboard.html";
         } else {
           window.location.href = "index.html";
         }
@@ -157,6 +157,5 @@ const onLogin = () => {
     })
     .catch((err) => {
       console.log(err);
-      // loding_container.style.display = "none";
     });
 };

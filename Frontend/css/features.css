@@ -96,7 +96,7 @@ body {
   display: inline-block;
   padding: 1rem 2.8rem;
   padding-right: 3rem;
-  background: linear-gradient(130deg, #ff004f 93%, transparent 90%);
+  background: linear-gradient(130deg, #c11325 93%, transparent 90%);
   color: #fff;
   cursor: pointer;
   font-size: 1.7rem;
@@ -124,16 +124,22 @@ body {
   padding: 0 9%;
   z-index: 10000;
   background: #000;
+  height: 70px;
 }
 #logoimage {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
+  height: 100%;
   margin: auto;
+}
+#logoimage a {
+  height: 100%;
 }
 #logoimage img {
   width: 200px;
+  height: 100%;
 }
 .trainers {
   margin-top: 10rem;

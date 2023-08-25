@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go-Fit | Create Class</title>
+    <link rel="icon" href="../images/Fitness-Hub-Logo.jpg" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/createClass.css" />
+  </head>
+
+  <body>
+    <div id="loding_container">
+      <div id="loding_div">
+        <img src="../images/loding.gif" alt="" srcset="" />
+        <h2>Please Wait...</h2>
+      </div>
+    </div>
+
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="../images/Fitness-Hub-Logo.jpg" alt="logo"
+      /></a>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a href="./trainerDashboard.html" id="user_name">trainer's Dashboard</a>
+        <a href="./createClass.html">Create Fitness Class</a>
+        <a href="" onclick="logoutFun()">Log out</a>
+      </nav>
+    </header>
+
+    <section id="dashboard">
+      <div id="page-title">
+        <h2>Create Fitness Class</h2>
+      </div>
+    </section>
+
+    <!-- ..........................Create Class.........................................-->
+    <div id="container1">
+      <div id="form">
+        <div id="createClass">
+          <form action="">
+            <div id="top">
+              <div>
+                <label for="title">Class Title</label> <br />
+                <input
+                  type="text"
+                  placeholder="Enter class title"
+                  id="title"
+                  required
+                />
+              </div>
+              <div>
+                <label for="price">Class Price</label> <br />
+                <input
+                  type="number"
+                  placeholder="Enter class Price"
+                  id="price"
+                  required
+                />
+              </div>
+            </div>
+            <br />
+
+            <div>
+              <div id="selectCat">
+                <label for="activity">Select Activity</label> <br />
+                <select id="activity" required>
+                  <option value="aerobics">Aerobics</option>
+                  <option value="boxing">Boxing</option>
+                  <option value="cardio">Cardio</option>
+                  <option value="crossFit">Cross Fit</option>
+                  <option value="cycling">Cycling</option>
+                  <option value="dance">Dance</option>
+                  <option value="football">Football</option>
+                  <option value="weightTraining">Weight Training</option>
+                  <option value="yoga">Yoga</option>
+                  <option value="zumba">Zumba</option>
+                </select>
+              </div>
+              <br />
+            </div>
+
+            <div id="mid">
+              <div>
+                <label for="seatTotal">Total Seats Available</label> <br />
+                <input
+                  type="number"
+                  placeholder="Enter seats available"
+                  id="seatTotal"
+                  required
+                />
+              </div>
+              <div>
+                <label for="venue">Select Venue</label> <br />
+                <select id="venue" required>
+                  <option value="online">Online via zoom</option>
+                  <option value="offline">Offline</option>
+                </select>
+              </div>
+            </div>
+            <br />
+
+            <div>
+              <label for="locationOrLinkLocation/Link"
+                >Class Location/Link</label
+              >
+              <br />
+              <input
+                type="text"
+                placeholder="Select Class Date & Time to generate class link"
+                id="locationOrLink"
+                required
+              />
+            </div>
+            <br />
+
+            <div id="bottom">
+              <div>
+                <label for="duration">Class Duration</label> <br />
+                <input
+                  type="text"
+                  placeholder="Enter class duration"
+                  id="duration"
+                  required
+                />
+              </div>
+              <div>
+                <label for="date_time">Class Date & Time</label> <br />
+                <input
+                  type="datetime-local"
+                  placeholder="Enter class Date & Time"
+                  id="date_time"
+                  required
+                />
+              </div>
+            </div>
+            <br />
+            <div id="button1">
+              <input type="submit" id="submit_btn" value="Create Class" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../scripts/createClass.js"></script>
+  </body>
+</html>

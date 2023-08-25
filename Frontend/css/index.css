@@ -248,7 +248,7 @@ header .ham-burger.active span:nth-child(2) {
 }
 
 .service div:hover {
-  border: 3px solid rgb(246, 255, 0);
+  border: 3px solid #ff004f;
 }
 
 .service img:hover {
@@ -382,7 +382,7 @@ header .ham-burger.active span:nth-child(2) {
   position: relative;
   width: 100%;
   min-height: 450px;
-  background-color: #c11325;
+  background-color: #bc2231;
   padding: 50px 0px;
 }
 .review .contents-wraper {
