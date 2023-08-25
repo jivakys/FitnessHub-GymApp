@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+:root {
+  --main-color: #ff1744;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+body {
+  background: #000;
+}
+
+/* ........................................................................................................................................................................... */
+
+section {
+  padding: 2rem 5%;
+}
+
+/* .heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: .1rem;
+  width: 100%;
+  background: #aaa;
+  z-index: -1;
+}
+
+.heading span {
+  font-size: 3rem;
+  color: var(--main-color);
+  background: #000;
+  padding: .5rem 1.5rem;
+  border: 0.1rem solid #aaa;
+  border-radius: .5rem;
+} */
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, var(--main-color) 93%, transparent 90%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 9%;
+  z-index: 10000;
+  background: #000;
+}
+
+.header .logo img {
+  width: 150px;
+  margin-top: 2px;
+}
+
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  background: var(--main-color);
+}
+
+#menu-btn {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* .................................................Content..................................... */
+
+#dashboard {
+  margin-top: 50px;
+}
+
+#title {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+#dashboard #title h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* ======================= Cards ====================== */
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.cardBox .card {
+  position: relative;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+#profimgdiv {
+  display: flex;
+}
+
+.card img {
+  width: 7rem;
+  margin-right: 2rem;
+}
+
+.cardBox .card p {
+  position: relative;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.cardBox .card .cardName {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  /* margin-top: 0rem; */
+}
+
+.cardBox .card .numbers {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+/* .................................................Classes List..................................... */
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 0.1rem;
+  width: 100%;
+  background: #aaa;
+  z-index: -1;
+}
+
+.heading span {
+  font-size: 3rem;
+  color: #ff004f;
+  background: #000;
+  padding: 0.5rem 1.5rem;
+  border: 0.1rem solid #aaa;
+  border-radius: 0.5rem;
+}
+
+/* .................................................Footer..................................... */
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links {
+  font-size: 1.5rem;
+  display: block;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links:hover {
+  color: var(--main-color);
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+
+.footer .box-container .box .share {
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #111;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: var(--main-color);
+}
+
+.footer .box-container .box form .email {
+  margin-bottom: 1rem;
+  width: 100%;
+  background: #111;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.credit {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  background: #111;
+  line-height: 1.5;
+}
+
+.credit span {
+  color: var(--main-color);
+}
+
+/* ........................................................................................................................................................................... */
+
+/* .............................Multiple Screen ........................... */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding: 7rem;
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+    scroll-padding: 7rem;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  #menu-btn.fa-times {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+  }
+
+  #dashboard {
+    margin-top: 75px;
+  }
+
+  .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* ..................................................Classes Table................................................... */
+
+/* Page Wrapper/Container Style */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 1.7rem;
+}
+
+.cancel-btn {
+  padding: 0.8rem;
+  background: red;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+  max-width: 7rem;
+  max-height: 4rem;
+}
+.update-btn {
+  padding: 0.8rem;
+  background-color: #e7e7e7;
+  color: black;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  max-width: 7rem;
+  max-height: 4rem;
+}
+.detail-btn {
+  padding: 0.8rem;
+  background: #4681f4;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+  max-width: 7rem;
+  max-height: 4rem;
+}
+
+.allbtns {
+  display: flex;
+}
+
+/* Responsive Table Style */
+.responsive-table {
+  background-color: #fefefe;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  width: 100%;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+.responsive-table__row {
+  display: grid;
+  border-bottom: 1px solid #edeef2;
+  padding: 0 1.5rem;
+}
+@media (min-width: 768px) {
+  .responsive-table__row {
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-table__row {
+    grid-template-columns: 1fr 2fr 1.5fr;
+  }
+}
+.responsive-table__row th,
+.responsive-table__row td {
+  padding: 1rem;
+}
+.responsive-table__head {
+  background-color: #e1e8f2;
+}
+@media (max-width: 991px) {
+  .responsive-table__head {
+    display: none;
+  }
+}
+.responsive-table__head__title {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.responsive-table__body .responsive-table__row {
+  transition: 0.1s linear;
+  transition-property: color, background;
+}
+.responsive-table__body .responsive-table__row:last-child {
+  border-bottom: none;
+}
+.responsive-table__body .responsive-table__row:hover {
+  color: #ffffff;
+  background-color: var(--main-color);
+}
+.responsive-table__body__text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.responsive-table__body__text::before {
+  margin-right: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+@media (max-width: 991px) {
+  .responsive-table__body__text::before {
+    content: attr(data-title) " :";
+  }
+  .responsive-table__body__text--delete::before {
+    content: "";
+  }
+
+  .cancel-btn {
+    padding: 0.8rem;
+    background: red;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    max-width: 7rem;
+    max-height: 4rem;
+  }
+  .update-btn {
+    padding: 0.8rem;
+    background-color: #e7e7e7;
+    color: black;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin: 0rem;
+    margin-left: 0.5rem;
+    max-width: 7rem;
+    max-height: 4rem;
+  }
+  .detail-btn {
+    padding: 0.8rem;
+    background: #4681f4;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-left: 0.5rem;
+
+    max-width: 7rem;
+    max-height: 4rem;
+  }
+
+  /* .allbtns {
+    
+  } */
+}
+@media (max-width: 400px) {
+  .responsive-table__body__text::before {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+.responsive-table__body__text--name {
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .responsive-table__body__text--name::before {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-table__body__text--name {
+    grid-column: 1/2;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-table__body__text--price,
+  .responsive-table__body__text--seats,
+  .responsive-table__body__text--date {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-table__body__text--venue,
+  .responsive-table__body__text--delete {
+    grid-column: 3/-1;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-table__body__text--name,
+  .responsive-table__body__text--venue {
+    grid-row: 2;
+  }
+}
+
+/* SVG Up Arrow Style */
+.up-arrow {
+  height: 100%;
+  max-height: 1.8rem;
+  margin-left: 1rem;
+}
+
+/* SVG User Icon Style */
+.user-icon {
+  width: 100%;
+  max-width: 4rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+/* ------------css for loding animation------------- */
+#loding_container {
+  display: none;
+  transition: ease-in-out 0.5s;
+}
+#loding_div {
+  position: fixed;
+  top: 200px;
+  left: 20%;
+  right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 500;
+}
+#loding_div > img {
+  width: 120px;
+}
+#loding_div > h2 {
+  text-align: center;
+  color: #ee0606;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+/* ------------css for loding animation Ended here ------------ */

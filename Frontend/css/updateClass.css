@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+:root {
+  --main-color: #ff1744;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+body {
+  background: #000;
+}
+
+/* ........................................................................................................................................................................... */
+
+section {
+  padding: 2rem 5%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, var(--main-color) 93%, transparent 90%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 9%;
+  z-index: 10000;
+  background: #000;
+}
+
+.header .logo img {
+  width: 150px;
+  margin-top: 2px;
+}
+
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  background: var(--main-color);
+}
+
+#menu-btn {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* .................................................Content..................................... */
+
+#dashboard {
+  margin-top: 50px;
+}
+
+#page-title {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+#dashboard #page-title h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* ..........................................Create Class form ..........................................................*/
+
+#container1 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid white; */
+}
+
+#form {
+  padding: 5rem 3rem;
+  border: 1px solid var(--main-color);
+}
+
+#form label {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#name,
+#pass,
+#top,
+#top2,
+#mid,
+#bottom {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+#top,
+#top2,
+#mid,
+#bottom {
+  width: 95% !important;
+}
+#createClass select {
+  width: 93%;
+  margin-left: 12px;
+  font-size: 1.5rem;
+}
+
+#country1 select,
+#email input {
+  width: 240%;
+  margin: auto;
+}
+#select,
+#select2,
+#pass,
+#button,
+#country1,
+#email {
+  width: 80%;
+  margin: auto;
+}
+#gender,
+#role {
+  width: 100%;
+}
+#signup {
+  width: 50%;
+}
+#signup input {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+select {
+  padding: 5px;
+  border-radius: 3px;
+}
+#form button,
+#submit_btn {
+  width: 250%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: black !important;
+  border: none;
+  cursor: pointer;
+}
+
+#submit_btn {
+  padding: 10px !important;
+  width: 95%;
+}
+
+#form button:hover,
+#submit_btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#createClass input {
+  width: 100%;
+  font-size: 1.5rem;
+}
+#form1 {
+  width: 30%;
+}
+#create,
+#submit_btn {
+  width: 100%;
+}
+#form1 input,
+#form input,
+#container2 #form input {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 90%;
+  margin: auto;
+  margin-left: 3%;
+}
+#container1 label,
+#container2 label {
+  padding: 5px;
+  width: 90%;
+  margin: auto;
+  margin-left: 3%;
+}
+#form1 select,
+#form1 label {
+  width: 90%;
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 1080px) {
+  #signup_img {
+    display: none;
+  }
+  #form {
+    width: max-content;
+  }
+  #form input {
+    width: max-content;
+  }
+  #container1 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid white; */
+  }
+
+  #createClass select {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #container1 {
+    /* width: max-content; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  #container1 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid white; */
+  }
+
+  #form input {
+    width: 90%;
+  }
+  #form {
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    /* border: none; */
+  }
+  #createClass select {
+    width: max-content;
+  }
+}
+
+/* ........................................................................................................................................................................... */
+
+/* .............................Multiple Screen ........................... */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding: 7rem;
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+    scroll-padding: 7rem;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  #menu-btn.fa-times {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+  }
+
+  #dashboard {
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* ------------css for loding animation------------- */
+#loding_container {
+  display: none;
+  transition: ease-in-out 0.5s;
+}
+#loding_div {
+  position: fixed;
+  top: 200px;
+  left: 20%;
+  right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 500;
+}
+#loding_div > img {
+  width: 120px;
+}
+#loding_div > h2 {
+  text-align: center;
+  color: #ee0606;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+/* ------------css for loding animation Ended here ------------ */
