@@ -87,15 +87,11 @@ const onSignUp = () => {
     .catch((err) => console.log(err));
 };
 
-// document.querySelector("#create-an-account").addEventListener("click", () => {
-//   window.location = "signup.html";
-// });
-// let loding_container = document.getElementById("loding_container");
-// let google_button = document.querySelector("#login-google-button");
+let google_button = document.querySelector("#login-google-button");
 
-// google_button.addEventListener("click", async () => {
-//   window.location = "https://rich-plum-barracuda-fez.cyclic.app/auth/google";
-// });
+google_button.addEventListener("click", async () => {
+  window.location = "http://localhost:3456/auth/google";
+});
 
 const onLogin = () => {
   const payload = {
@@ -112,13 +108,13 @@ const onLogin = () => {
     return;
   }
 
-  // if (payload.email == "admin@gmail.com" || payload.pass == "admin") {
-  //   Swal.fire("Welcome Admin !!", "You Loggged in", "success");
-  //   setTimeout(() => {
-  //     window.location.href = "adminDashboard.html";
-  //   }, 2000);
-  //   return;
-  // }
+  if (payload.email == "admin@gmail.com" || payload.pass == "admin") {
+    Swal.fire("Welcome Admin !!", "You Loggged in", "success");
+    setTimeout(() => {
+      window.location.href = "adminDashboard.html";
+    }, 2000);
+    return;
+  }
 
   fetch("http://localhost:3456/user/login", {
     method: "POST",
@@ -151,7 +147,7 @@ const onLogin = () => {
         if (res.message == "Trainer Logged In") {
           window.location.href = "trainerDashboard.html";
         } else {
-          window.location.href = "index.html";
+          window.location.href = "userDashboard.html";
         }
       }, 2000);
     })

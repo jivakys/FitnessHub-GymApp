@@ -1,14 +1,13 @@
 const nodemailer = require("nodemailer");
 
-require('dotenv').config();
-
-const mailOrderDetail = (order, classes, user,trainer) => {
-  
+require("dotenv").config();
+const mailOrderDetail = (order, classes, user, trainer) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user:process.env.EMAIL_ADDRESS,
-      pass:process.env.EMAIL_PASSWORD,
+      user: process.env.EMAIL_ADDRESS,
+      pass: process.env.EMAIL_PASSWORD,
+
     },
   });
 
@@ -16,9 +15,10 @@ const mailOrderDetail = (order, classes, user,trainer) => {
   transporter
     .sendMail({
       to: trainer.email,
-      from:process.env.EMAIL_ADDRESS,
-      subject: "Congratulations! Order received from Fitness Hub",
-      text: "from Fitness Hub",
+      from: process.env.EMAIL_ADDRESS,
+      subject: "Congratulations! Order received from Workout Fitness Hub",
+      text: "from Workout Fitness Hub",
+
       html: `
         <h1>Hello ${trainer.name}</h1>
         <p>A Client has booked a fitness class with you.</p>
@@ -48,6 +48,7 @@ const mailOrderDetail = (order, classes, user,trainer) => {
       from: "process.env.EMAIL_ADDRESS",
       subject: "Congratulations! Order successful from Fitness-Hub..",
       text: "from Workout Fitness Center",
+      
       html: `
         <h1>Hello ${user.name}</h1>
         <p>Thank you for booking a fitness class with us.</p>
