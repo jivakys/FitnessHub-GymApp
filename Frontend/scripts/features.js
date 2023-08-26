@@ -1,4 +1,5 @@
-let url = "http://localhost:3456";
+let url = "https://tame-gray-eagle-gown.cyclic.cloud/"
+// "http://localhost:3456";
 
 let boxContainer = document.querySelector("#trainers .box-container");
 

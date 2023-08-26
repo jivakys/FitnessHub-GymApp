@@ -1,4 +1,4 @@
-let baseURL = "http://localhost:3456";
+let baseURL = "https://tame-gray-eagle-gown.cyclic.cloud";
 
 let loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
 if (!loggedInUser) {
