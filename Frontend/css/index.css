@@ -167,7 +167,9 @@ header .ham-burger.active span:nth-child(2) {
   position: relative;
   margin-top: 60px;
 }
-
+/* .carousel-item img {
+  width: 500px;
+} */
 /*About section*/
 
 .about {
