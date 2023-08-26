@@ -68,7 +68,7 @@ const onSignUp = () => {
 
     return;
   }
-  fetch("http://localhost:3456/user/register", {
+  fetch("https://tame-gray-eagle-gown.cyclic.cloud/user/register", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -120,7 +120,7 @@ const onLogin = () => {
   //   return;
   // }
 
-  fetch("http://localhost:3456/user/login", {
+  fetch("https://tame-gray-eagle-gown.cyclic.cloud/user/login", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -158,4 +158,4 @@ const onLogin = () => {
     .catch((err) => {
       console.log(err);
     });
-};
+}; 

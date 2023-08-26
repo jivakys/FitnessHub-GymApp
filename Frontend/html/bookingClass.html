@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../Images/favicons/favicon6.ico"
+      type="image/x-icon"
+    />
+
+    <title>Fitness-Hub| Book Fitness Class</title>
+    <link rel="icon" href="../imgs/logo/logo.png" />
+    <link rel="stylesheet" href="../css/bookingClass.css" />
+  </head>
+  <body>
+    <div id="loding_container">
+      <div id="loding_div">
+        <img src="../imgs/loding.gif" alt="" srcset="">
+        <h2>Please Wait...</h2>
+      </div>
+      </div>
+  <div id="login-container">
+    <nav class="container2">
+      <div class="logo"><img  id="logoimg_nav" src="../imgs/logo.png"  alt="" /></div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="./userDashboard.html" id="user_name"></a></li>
+          <li><a href="./userDashboard.html">My Classses</a></li>
+          <li><a href="./userSearchClass.html">Class Search</a></li>
+          <li><a href="./login.html" onclick="logoutFun()">Logout</a></li>
+        </div>
+      </ul>
+    </nav>
+    <div id="container2">
+      <div id="left_img_part">
+        <img
+          width="100px"
+          src="../imgs/about_men_women_img.jpg"
+          alt=""
+          id="signup_img"
+        />
+      </div>
+      <div id="form">
+        <div id="logo_img">
+          <img src="../imgs/logo.png" alt="" id="logo" />
+        </div>
+        <p style="text-align: center; color: #5e8e92; font-size: large">
+          Book Fitness Class
+        </p>
+        <br />
+
+        <div id="createClass">
+          <form id="creatclassfrom">
+            <div id="top">
+              <div class="formdivtag">
+                <label for="title">Class Title</label> <br />
+                <input
+                  type="text"
+                  placeholder="Enter class title"
+                  id="title"
+                  readonly
+                />
+              </div>
+              <div class="formdivtag">
+                <label for="price">Class Price</label> <br />
+                <input
+                  type="number"
+                  placeholder="Enter class Price"
+                  id="price"
+                  readonly
+                />
+              </div>
+            </div>
+            <br />
+
+            <div id="top2">
+              <div class="formdivtag">
+                <label for="trainerName">Trainer Name</label> <br />
+                <input
+                  type="text"
+                  placeholder="Trainer Name"
+                  id="trainerName"
+                  readonly
+                />
+              </div>
+              <div class="formdivtag">
+                <label for="activity">Activity</label> <br />
+                <input
+                  type="text"
+                  placeholder="Activity"
+                  id="activity"
+                  readonly
+                />
+              </div>
+            </div>
+            <br />
+
+            <div id="mid">
+              <div class="formdivtag">
+                <label for="seatTotal">Total Seats</label> <br />
+                <input
+                  type="number"
+                  placeholder="Total Seats"
+                  id="seatTotal"
+                  readonly
+                />
+              </div>
+              <div class="formdivtag">
+                <label for="venue">Venue</label> <br />
+                <input type="text" placeholder="Venue" id="venue" readonly />
+              </div>
+            </div>
+            <br />
+
+            <div class="formdivtag">
+              <label for="locationOrLinkLocation/Link"
+                >Class Location/Link</label
+              >
+              <br />
+              <input
+                type="text"
+                placeholder="Class Location/Link"
+                id="locationOrLink"
+                readonly
+              />
+            </div>
+            <br />
+
+            <div id="bottom">
+              <div class="formdivtag">
+                <label for="duration">Class Duration</label> <br />
+                <input
+                  type="text"
+                  placeholder="Class Duration"
+                  id="duration"
+                  readonly
+                />
+              </div>
+              <div class="formdivtag">
+                <label for="date_time">Select Date & Time</label> <br />
+                <input
+                  type="datetime-local"
+                  placeholder="Enter class Date & Time"
+                  id="date_time"
+                />
+              </div>
+            </div>
+            <br />
+
+            <div id="button1">
+              <input
+                type="button"
+                id="submit_btn"
+                class="next_btn"
+                value="Next"
+              />
+            </div>
+            <div id="button1">
+              <input
+                type="submit"
+                id="submit_btn"
+                class="checkAvailablity_btn"
+                value="Check Availablity"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module" src="../scripts/bookingClass.js"></script>
