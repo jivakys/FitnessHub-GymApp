@@ -1,7 +1,8 @@
-const express = require("express");
-const { connection } = require("./config/mongo_DB");
-const { userRouter } = require("./routes/userRouter");
-const { classesRouter } = require("./routes/classesRouter");
+const express=require('express')
+const {connection}=require("./config/mongo_DB")
+const {userRouter}=require("./routes/userRouter")
+const {classesRouter}=require("./routes/classesRouter")
+const {ordersRouter}=require("./routes/ordersRouter")
 const { dashboardRouter } = require("./routes/adminRouter");
 const { UserModel } = require("./models/userModel");
 const cors = require("cors");
@@ -14,11 +15,22 @@ app.use(cors({ origin: "*" }));
 const { passport } = require("./google.outh");
 
 //...... api point (routes) start here..........//
-app.get("/", (req, res) => {
-  res.send("Base Endpoint Of API");
-});
-app.use("/user", userRouter);
-app.use("/class", classesRouter);
+app.get("/",(req,res)=>{
+    res.send("Base Endpoint Of API")
+})
+
+app.get("/alltrainer", async (req,res)=>{
+    try{
+        let trainers = await UserModel.find({role:"trainer"});
+        res.status(200).send({message:"User Trainer Data Fetched",trainers})
+    }catch(error){
+        res.status(400).send({message:"Something went wrong",error:error.message})
+        console.log(error)
+    }
+})
+app.use("/user",userRouter);
+app.use("/class",classesRouter);
+app.use("/order",ordersRouter);
 app.use("/admin", dashboardRouter);
 app.get("/alltrainer", async (req, res) => {
   try {
