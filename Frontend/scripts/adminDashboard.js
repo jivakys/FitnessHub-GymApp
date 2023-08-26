@@ -1,3 +1,5 @@
+// admin part//
+
 // import baseURL from "./baseURL.js";
 const baseURL = `https://tame-gray-eagle-gown.cyclic.cloud/`;
 
