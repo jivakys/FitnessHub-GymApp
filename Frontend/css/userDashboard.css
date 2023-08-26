@@ -1,0 +1,233 @@
+
+body{
+    background-color: black;
+}
+/* ------------css for loding animation------------- */
+#loding_container{
+    display: none;
+    transition: ease-in-out 0.5s;
+  }
+  #loding_div{
+    position: fixed;
+    top: 200px;
+    left: 20%;
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 500;
+  }
+  #loding_div>img{
+    width: 120px;
+  }
+  #loding_div>h2{
+    text-align: center;
+    color: #ee0606;
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  
+  
+  /* ------------css for loding animation Ended here ------------ */
+#cardcontainer{
+    background-color: white;
+    padding: 10px;
+    margin-top:15px;
+    border-radius: 10px;
+}
+#cardcontainer div{
+    margin: 10px;
+}
+.accordion-toggle{
+    display: none;
+}
+@media(min-width: 360px) and (max-width: 820px){
+    #cardcontainer {
+    
+        /* width: 50%; */
+        /* margin-left: 45%; */
+        flex-wrap: wrap;
+
+    }
+    #temp{
+        flex-direction: column;
+    }
+}
+@media(max-width: 395px){
+    #cardcontainer {
+    
+        /* width: 50%; */
+        /* margin-left: 45%; */
+        flex-wrap: wrap;
+
+    }
+    #temp{
+        flex-direction: column;
+    }
+}
+.picker-switch .accordion-toggle{
+    display: none;
+}
+.timepicker{
+    display: none;
+}
+#temp{
+    display: flex;
+    justify-content: space-evenly;
+}
+#datetimepicker1{
+margin: 50px;
+background-color: white;
+border-radius: 10px;
+min-width: 350px;
+padding: 16px;
+}
+#yourclasses{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600 ;
+    background-color: white;
+    font-family: 'poppins', sans-serif;
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid rgba(108, 197, 29, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    /* width: 92%; */
+    
+}
+.card a{
+    cursor: pointer;
+}
+.left1{
+    border: 1px solid rgba(108, 197, 29, 0.2);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(3, 145, 39);
+    font-weight: 600;
+}
+.left1:hover{
+    background-color: #6CC51D;
+    color: white;
+    font-weight: 600;
+}
+.information a{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    /* line-height: 1.5; */
+    font-family: 'poppins', sans-serif;
+}
+.information{
+    line-height: 1;
+    font-weight: 600;
+    font-size: 17px;
+}
+.classinfoname{
+    color: #1EA7C5 ;
+    font-size: 17px;
+    font-weight: 500;
+}
+.joinclassbutton{
+    color: #ffffff;
+    padding: 0.625rem 1rem;
+    border-radius: 0.875rem;
+    /* border: 1px solid #6CC51D; */
+    background-color: #ff004f;
+}
+.joinclassbutton:hover{
+    background-color: #ff004f;
+    color: white;
+    font-weight: 600;
+}
+#clientinfo{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+#clientinfo div{
+    border-radius: 8px;
+    display: flex;
+}
+#clientname{
+    background-image: url("https://images.pexels.com/photos/949129/pexels-photo-949129.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+   height: 150px;
+}
+#profimgdiv{
+   width: 30%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#clientnamediv{
+    width: 70%;
+}
+#clientnamediv p{
+    color: white;
+    font-size: 18px;
+}
+
+#profileimg{
+    
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 0.357rem solid #fff;
+    background-color: #fff;
+    box-shadow: 0 4px 24px 0 rgba(34,41,47,.1);
+    display: block;
+}
+
+#clineclass{
+    width: 48%;
+    height: 130px;
+    overflow: scroll;
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+}
+
+@media(min-width: 20px) and (max-width: 700px){
+    #clientinfo{
+        flex-direction: column;
+        margin-left: 45px;
+    }
+    #clientname{
+        width: 95%;
+        margin: auto;
+    }
+    #clineclass{
+        width: 92%;
+        margin: auto;
+        margin-top: 1%;
+    }
+    #profileimg{
+        width: 70px;
+    }
+    #clientnamediv p{
+        font-size: 15px;
+    }
+
+}
