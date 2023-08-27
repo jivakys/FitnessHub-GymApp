@@ -86,7 +86,6 @@ npx nodemon index.js
 
 `Redis Cloud: Password + Host + Port`
 
-`Nodemailer: Email + Password`
 
 ## NPM Packages
 <p align = "center">
@@ -110,6 +109,7 @@ POST  /user/register
 ```
   #### Signin
 ```javascript
+POST /user/login
 POST  /user/logout
 ```
 #### User 
@@ -124,27 +124,34 @@ DELETE /user/delete/:id
   #### Trainer
 ```javascript
 GET /alltrainer
-GET /user/singletrainer/:id
 ```
 
 <div align = "center">  
-  
-  
+
 | `Project Highlights` |
 | :------------------: | 
 
  <div align = "center">
    <h2>Landing Page</h2>
-   <img width="956" alt="Landing_Page" src="https://github.com/atir09/spicy-bushes-5520/assets/112818778/098025e5-c6b6-418d-bfde-fa6278b8b19a">
+   <img width="956" alt="Landing_Page" src="https://github.com/jivakys/truculent-face-1803/assets/112770989/c8413afa-8b52-49ef-95ad-207a5ab60ea3">
    <br>
    <h2>Client Dashboard</h2>
-   <img width="960" alt="User_Dashboard" src="https://github.com/atir09/spicy-bushes-5520/assets/112818778/37736d87-5301-4fb4-be8f-0edc31b2895e">
+   <img width="960" alt="User_Dashboard" src="https://github.com/jivakys/truculent-face-1803/assets/112770989/1247efa3-aea3-40ce-b590-055100250d5a">
    <br>
    <h2>Trainer Dashboard</h2>
-   <img width="958" alt="Trainer_Dashboard" src="https://github.com/atir09/spicy-bushes-5520/assets/112818778/e9a50223-99e3-493b-a72d-089a9c6775c4">
+   <img width="958" alt="Trainer_Dashboard" src="https://github.com/jivakys/truculent-face-1803/assets/112770989/ad2845e9-9fd3-42f4-8261-7599a26e5085">
    <br>
-   <h2>Class Information</h2>
-   <img width="960" alt="Class_Information" src="https://github.com/atir09/spicy-bushes-5520/assets/112818778/f656b37b-7fdb-441a-a79e-1d256819c740">
+   <h2>Create Class</h2>
+   <img width="960" alt="Class_Information" src="https://github.com/jivakys/truculent-face-1803/assets/112770989/2daff637-773a-4111-8e25-45bc28f3d57d">
+   <br>
+   <h2>Book Class</h2>
+   <img width="958" alt="Book_Class" src="https://github.com/jivakys/truculent-face-1803/assets/112770989/e3bf5ebc-780d-4c20-ba07-34faf9ecfad9">
+   <br>
+   <h2>Registration</h2>
+   <img width="958" alt="Registration_page" src="https://github.com/jivakys/truculent-face-1803/assets/112770989/ba80d581-5582-4577-b6ca-91747247420b">
+   <br>
+   <h2>Login</h2>
+   <img width="958" alt="Login_Page" src="https://github.com/jivakys/truculent-face-1803/assets/112770989/38d5cc40-9247-42c6-ba4a-73d1516c2c7f">
    <br>
   <div/>
   <br>
