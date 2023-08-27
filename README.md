@@ -5,7 +5,7 @@
   <img src="Frontend/images/Fitness-Hub-Logo.jpg" alt="html" width="200" height="100"/>
   <br>
   <br>
-  <p>Welcome to Go Fit, the ultimate sports and wellness app designed to help users and certified fitness trainers to get together and work on the fitness goal on one platform.</p>
+  <p>Welcome to Fitness-Hub, the ultimate wellness and gym app designed to help users and certified fitness trainers to get together and work on the fitness goal on one platform.</p>
   <br>
   <p>Our system provides a user-friendly platform that enables users to browse, book, and cancel fitness classes with ease. Our platform empowers trainers to create classes with comprehensive information such as class time, venue, date, and more. Additionally, all-encompassing administrative interface that enables authorized personnel to perform a wide range of operations.</p>
 </div>
