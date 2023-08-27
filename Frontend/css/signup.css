@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+* {
+  font-family: "Nunito";
+}
+body {
+  background-image: url("https://www.worldgym.com/cms/thumbnails/34/879x670/sub/61991/images/photo-gallery/WGCoomera-042.jpg");
+}
+#container {
+  padding: 1%;
+}
+#logo {
+  width: 20%;
+  height: 8vh;
+  margin-left: 38%;
+}
+
+#signup-heading {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+}
+
+#form {
+  width: 50%;
+  min-height: fit-content;
+  margin: auto;
+  opacity: 0.9;
+  margin-top: 20px;
+  padding-top: 1%;
+  padding-bottom: 4%;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+}
+label {
+  color: #c11325;
+  font-size: 18px;
+  font-weight: bold;
+}
+#name,
+#pass,
+#top,
+#top2,
+#mid,
+#bottom {
+  display: flex;
+  gap: 80px;
+  font-size: large;
+  margin-left: 10%;
+}
+
+#firstName,
+#lastName {
+  margin-top: 5%;
+  width: 125%;
+  height: 4vh;
+  border-radius: 20px;
+  padding-left: 10%;
+  letter-spacing: 1px;
+  border: 2px solid #000;
+}
+
+#signup-password {
+  margin-top: 5%;
+  width: 270%;
+  height: 4vh;
+  border-radius: 20px;
+  padding-left: 10%;
+  letter-spacing: 1px;
+  border: 2px solid #000;
+}
+
+#Email {
+  margin-top: 5%;
+  width: 175%;
+  height: 4vh;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  padding-left: 10%;
+  border: 2px solid #000;
+}
+
+#role,
+#gender {
+  margin-top: 5%;
+  width: 100%;
+  height: 4vh;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  padding-left: 10%;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+#country1,
+#email {
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 1%;
+  font-size: large;
+  cursor: pointer;
+}
+#select,
+#select2 {
+  font-size: large;
+  cursor: pointer;
+}
+
+#email {
+  width: 39%;
+  margin-left: 10%;
+  margin-top: 1%;
+  font-size: large;
+  cursor: pointer;
+}
+
+#sign-upButton {
+  padding: 1%;
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 7%;
+  border: 2px solid white;
+  background-color: #c11325;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 6vh;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#back-to-login {
+  padding: 2%;
+  border: 2px solid white;
+  background-color: #c11325;
+  color: white;
+  width: 70%;
+  height: 2vh;
+  margin-left: 10%;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  #container {
+    background-image: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
+    padding: 1%;
+    margin: -3%;
+  }
+  #logo {
+    width: 20%;
+    height: 8vh;
+    margin-left: 38%;
+  }
+
+  #signup-heading {
+    text-align: center;
+    font-size: 40px;
+    color: #c11325;
+  }
+
+  #form {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    height: 100vh;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-family: cursive;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  #name,
+  #pass,
+  #top,
+  #top2,
+  #mid,
+  #bottom {
+    display: flex;
+    gap: 20px;
+    font-size: large;
+    margin-left: 10%;
+  }
+
+  #firstName,
+  #lastName {
+    margin-top: 5%;
+    width: 75%;
+    height: 4vh;
+    border-radius: 20px;
+    padding-left: 10%;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #signup-password {
+    margin-top: 5%;
+    width: 150%;
+    height: 4vh;
+    border-radius: 20px;
+    padding-left: 10%;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #Email {
+    margin-top: 5%;
+    width: 175%;
+    height: 4vh;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    padding-left: 10%;
+    border: 2px solid black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #email {
+    width: 39%;
+    margin-left: 10%;
+    margin-top: 1%;
+    font-size: large;
+    cursor: pointer;
+  }
+
+  #sign-upButton {
+    padding: 1%;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 7%;
+    border: 2px solid black;
+    background-color: #ff004f;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 50px;
+    height: 6vh;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #back-to-login {
+    padding: 2%;
+    border: 2px solid black;
+    width: 70%;
+    height: 2vh;
+    margin-left: 10%;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  #container {
+    background-image: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
+    padding: 1%;
+    margin: -3%;
+  }
+  #logo {
+    width: 50%;
+    height: 8vh;
+    margin-left: 25%;
+  }
+
+  #signup-heading {
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 40px;
+    color: #ff004f;
+  }
+
+  #form {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    height: 100vh;
+    padding-top: 1%;
+    padding-bottom: 10%;
+    font-family: cursive;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  #name,
+  #pass,
+  #top,
+  #top2,
+  #mid,
+  #bottom {
+    display: flex;
+    gap: 20px;
+    font-size: large;
+    margin-left: 10%;
+  }
+
+  #firstName,
+  #lastName {
+    margin-top: 5%;
+    width: 75%;
+    height: 4vh;
+    border-radius: 20px;
+    padding-left: 10%;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #signup-password {
+    margin-top: 5%;
+    width: 70%;
+    height: 4vh;
+    border-radius: 20px;
+    padding-left: 10%;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #Email {
+    margin-top: 5%;
+    width: 175%;
+    height: 4vh;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    padding-left: 10%;
+    border: 2px solid black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #email {
+    width: 39%;
+    margin-left: 10%;
+    margin-top: 1%;
+    font-size: large;
+    cursor: pointer;
+  }
+
+  #sign-upButton {
+    padding: 1%;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 7%;
+    border: 2px solid black;
+    background-color: #ff004f;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 50px;
+    height: 6vh;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #back-to-login {
+    padding: 2%;
+    border: 2px solid black;
+    width: 70%;
+    height: 2vh;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+}

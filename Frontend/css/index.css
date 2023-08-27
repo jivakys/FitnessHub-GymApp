@@ -30,7 +30,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #ffea00;
+  background: #c11325;
 }
 
 /*Header*/
@@ -45,7 +45,6 @@ header {
   width: 100%;
   z-index: 10;
   background-color: #000000;
-  /* padding: 15px 15px; */
 }
 header .container {
   -webkit-display: flex;
@@ -874,13 +873,10 @@ header .ham-burger.active span:nth-child(2) {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .start-today .content {
-    flex-wrap: wrap;
+  .service {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .start-today .content .box {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+
   .gallery .content {
     flex-wrap: wrap;
   }
@@ -908,5 +904,12 @@ header .ham-burger.active span:nth-child(2) {
 @media (max-width: 550px) {
   .home h1 {
     font-size: 30px;
+  }
+  .service {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service > div {
+    width: 100%;
+    margin: 5px;
   }
 }

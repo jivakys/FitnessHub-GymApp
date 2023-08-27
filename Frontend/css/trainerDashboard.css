@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 
 :root {
-  --main-color: #ff1744;
+  --main-color: #c11325;
 }
 
 * {
@@ -47,34 +47,6 @@ section {
   padding: 2rem 5%;
 }
 
-/* .heading {
-  text-align: center;
-  margin-bottom: 3rem;
-  position: relative;
-}
-
-.heading::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: .1rem;
-  width: 100%;
-  background: #aaa;
-  z-index: -1;
-}
-
-.heading span {
-  font-size: 3rem;
-  color: var(--main-color);
-  background: #000;
-  padding: .5rem 1.5rem;
-  border: 0.1rem solid #aaa;
-  border-radius: .5rem;
-} */
-
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -109,9 +81,12 @@ section {
   z-index: 10000;
   background: #000;
 }
-
+.logo {
+  height: 70px;
+}
 .header .logo img {
   width: 150px;
+  height: 100%;
   margin-top: 2px;
 }
 
@@ -222,7 +197,7 @@ section {
 
 .heading span {
   font-size: 3rem;
-  color: #ff004f;
+  color: #c11325;
   background: #000;
   padding: 0.5rem 1.5rem;
   border: 0.1rem solid #aaa;
@@ -391,7 +366,7 @@ section {
 
 .cancel-btn {
   padding: 0.8rem;
-  background: red;
+  background: #c11325;
   border-radius: 1rem;
   color: #fff;
   cursor: pointer;

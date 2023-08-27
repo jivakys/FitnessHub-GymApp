@@ -124,16 +124,18 @@ userRouter.post("/login", async (req, res) => {
           await client.HSET("token", email, token);
           await client.HSET("refresh_token", email, refresh_token);
           if (user.role == "trainer") {
+            console.log("trainer", user);
             res.status(200).send({
-              message: "Trainer Logged In",
+              message: "Now Trainer Logged In",
               token,
               refresh_token,
               user,
               OK: true,
             });
           } else {
+            console.log("client", user);
             res.status(200).send({
-              message: "User Logged In",
+              message: "Now User Logged In",
               token,
               refresh_token,
               user,

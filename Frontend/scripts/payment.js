@@ -2,51 +2,60 @@ import baseURL from "./baseURL.js";
 
 let loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
 if (!loggedInUser) {
-  window.location.href="login.html"
+  window.location.href = "login.html";
 }
 let loggedInUserEmail = loggedInUser.email;
-let loding_container=document.getElementById("loding_container")
-let classDetailsForOrder = JSON.parse(sessionStorage.getItem("classDetailsForOrder")) || {}; 
-document.getElementById("price").innerText = "₹" + (classDetailsForOrder.price||0);
+let loding_container = document.getElementById("loding_container");
+let classDetailsForOrder =
+  JSON.parse(sessionStorage.getItem("classDetailsForOrder")) || {};
+document.getElementById("price").innerText =
+  "₹" + (classDetailsForOrder.price || 0);
 
-
-async function orderClass(obj){
-    // console.log(obj)
-    try {
-        let url = baseURL+"/order/create";
-        loding_container.style.display="block";
-        let res = await fetch(url,{ 
-            method:"POST",
-            headers: {
-              authorization:`Bearer ${loggedInUserEmail}`,
-              "Content-Type": "application/json"
-            },
-            body:JSON.stringify(obj)
-        });
-            let data = await res.json();
-            loding_container.style.display="none";
-            if(res.status==400){
-                alert(data.message)
-                console.log(data.error)
-            }else{
-                // alert(data.message);                          
-                swal({text: data.message, icon: "success", button: "ok", timer:1000})
-                .then(()=>{
-                    window.location.href="userDashboard.html"
-                })
-            }
-    } catch (error) {
-      // alert("Server not responding");
-      loding_container.style.display="none";
-      swal({text: "Server not responding", icon: "error", button: "ok", timer:1000})
-        console.log(error.message);
+async function orderClass(obj) {
+  // console.log(obj)
+  try {
+    let url = baseURL + "/order/create";
+    loding_container.style.display = "block";
+    let res = await fetch(url, {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${loggedInUserEmail}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(obj),
+    });
+    let data = await res.json();
+    loding_container.style.display = "none";
+    if (res.status == 400) {
+      alert(data.message);
+      console.log(data.error);
+    } else {
+      // alert(data.message);
+      swal({
+        text: data.message,
+        icon: "success",
+        button: "ok",
+        timer: 1000,
+      }).then(() => {
+        window.location.href = "userDashboard.html";
+      });
     }
+  } catch (error) {
+    // alert("Server not responding");
+    loding_container.style.display = "none";
+    swal({
+      text: "Server not responding",
+      icon: "error",
+      button: "ok",
+      timer: 1000,
+    });
+    console.log(error.message);
+  }
 }
-
 
 let form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
-    event.preventDefault();
+  event.preventDefault();
   let cardnumber = document.querySelector(".card-number-input");
   let cardholder = document.querySelector(".card-holder-input");
   let month = document.querySelector(".month-input");
@@ -60,14 +69,15 @@ form.addEventListener("submit", (event) => {
     year.value == "" ||
     cvv.value == ""
   ) {
-    // alert("Please fill all the details");
-    swal({text: "Please fill all the details", icon: "warning", button: "ok", timer:1000})
+    swal({
+      text: "Please fill all the details",
+      icon: "warning",
+      button: "ok",
+      timer: 1000,
+    });
   } else {
-    
     orderClass(classDetailsForOrder);
   }
-
- 
 });
 
 document.querySelector(".card-number-input").oninput = () => {

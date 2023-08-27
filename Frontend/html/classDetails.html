@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness-Hub | Classes Information</title>
+    <link rel="icon" href="../images/Fitness-Hub-Logo.jpg" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/classDetails.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="../images/Fitness-Hub-Logo.jpg" alt="logo"
+      /></a>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="./userDashboard.html" id="user_name"></a>
+        <a href="./userDashboard.html">My Classses</a>
+        <a href="./userSearchClass.html">Class Search</a>
+        <a href="../index.html" onclick="logoutFun()">Log out</a>
+      </nav>
+    </header>
+
+    <section id="dashboard">
+      <div id="title">
+        <h2>Class Details</h2>
+      </div>
+
+      <div id="renderallinfo"></div>
+    </section>
+
+    <!-- ............................. Class........................................-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../scripts/classDetails.js"></script>
+  </body>
+</html>

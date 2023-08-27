@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness-Hub | User Dashboard</title>
+    <link rel="icon" href="../images/Fitness-Hub-Logo.jpg" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="vendor/chartist/css/chartist.min.css" />
+    <link
+      href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link href="../vendor/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/userDashboard.css" />
+    <link rel="stylesheet" href="../css/trainerDashboard.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness-Hub | Workout</title>
-    <link rel="icon" href="../imgs/logo/logo.png" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="../css/userDashboard.css">
-</head>
-
-<body>
+  <body>
     <div id="loding_container">
-        <div id="loding_div">
-          <img src="../imgs/loding.gif" alt="" srcset="">
-          <h2>Please Wait...</h2>
-        </div>
-      </div>
+      <div id="loding_div">
+        <img src="../images/loding.gif" alt="" srcset="" />
+        <h2>Please Wait...</h2>
+      </div>
+    </div>
     <header class="header">
-        <a href="#" class="logo"> <img src="../imgs/logo.png" alt="logo"></a>
-          <div id="menu-btn" class="fas fa-bars"></div>
-          <nav class="navbar">
-            <a href="./userDashboard.html" id="user_name"></a>
-            <a href="./userDashboard.html">My Classses</a>
-            <a href="./userSearchClass.html">Class Search</a>
-            <a href="../index.html" onclick="logoutFun()">Log out</a>
-          </nav>
-      </header>
-    <div id="clientinfo"> 
-    </div>
+      <a href="#" class="logo">
+        <img src="../images/Fitness-Hub-Logo.jpg" alt="logo"
+      /></a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a href="./userDashboard.html" id="user_name"></a>
+        <a href="./userDashboard.html">My Classses</a>
+        <a href="./userSearchClass.html">Class Search</a>
+        <a href="../index.html" onclick="logoutFun()">Log out</a>
+      </nav>
+    </header>
+    <div id="clientinfo"></div>
     <div id="yourclasses">
-        <h4>Your Classses</h4>
+      <h4>Your Classses</h4>
     </div>
-  
-    <div id="temp"> 
-                    <div id='datetimepicker1' ></div> 
 
-             <div id="cardcontainer">
-             </div>
-       
+    <div id="temp">
+      <div id="datetimepicker1"></div>
+
+      <div id="cardcontainer"></div>
     </div>
+    <script src="../vendor/global/global.min.js"></script>
+    <script src="../vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/moment.js"></script>
+    <script src="../vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../scripts/custom.min.js"></script>
+    <script src="../scripts/deznav-init.js"></script>
+    <script src="https://use.fontawesome.com/a9639bff1c.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script>
-        $(function () {
-            $('#datetimepicker1').datetimepicker({
-                inline: true,
-            });
+      $(function () {
+        $("#datetimepicker1").datetimepicker({
+          inline: true,
         });
+      });
     </script>
     <script>
-        w3.slideshow(".nature");
-        </script>
-</body>
-
+      w3.slideshow(".nature");
+    </script>
+  </body>
 </html>
 <script>
-    function logoutFun() {
-        sessionStorage.clear();
-    }
+  function logoutFun() {
+    sessionStorage.clear();
+  }
 </script>
 <script type="module" src="../scripts/userDashboard.js"></script>
 <!-- //userDashboard here// -->
