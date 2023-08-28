@@ -14,9 +14,9 @@
 | :----: | 
    
 
-[FRONTEND - NETLIFY](https://fitness-hub34.netlify.app/)
+[FRONTEND - NETLIFY](https://64ec32328c80145abe2c0486--tubular-unicorn-50d6e4.netlify.app/)
 
-[BACKEND - CYCLIC](https://tame-gray-eagle-gown.cyclic.cloud)
+[BACKEND - CYCLIC](https://hilarious-ruby-camel.cyclic.cloud/)
 
  
 | `Authors` |
