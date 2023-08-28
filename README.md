@@ -45,7 +45,6 @@
 -  Registeration/Signin/Logout
 -  Different Interface for both Users and Trainers
 -  API Validation
--  Cross Platform
 -  Class Creation 
 -  Class Booking
 -  Responsive
@@ -77,16 +76,6 @@ npx nodemon index.js
 [http://localhost:3456](http://localhost:3456)
 
 
-### Environment Variables Required
-`mongourl`
-
-`secretKey + refreshSecretKey + salt`
-
-`port`
-
-`Redis Cloud: Password + Host + Port`
-
-
 ## NPM Packages
 <p align = "center">
 <img src="https://repository-images.githubusercontent.com/139898859/9617c480-81c2-11ea-94fc-322231ead1f0" alt="bcrypt.png" width="70" height="50"/>
@@ -97,34 +86,6 @@ npx nodemon index.js
 <img src="https://user-images.githubusercontent.com/13700/35731649-652807e8-080e-11e8-88fd-1b2f6d553b2d.png" alt="nodemon.png" width="50" height="50"/>
 </p>
 
-   
-## API Endpoints
-   #### Welcome
-```javascript
-GET  /
-```
-  #### Registration
-```javascript
-POST  /user/register
-```
-  #### Signin
-```javascript
-POST /user/login
-POST  /user/logout
-```
-#### User 
-```javascript
-GET /user/
-GET /user/all
-GET /user/:id
-POST  /user/register
-PATCH /user/update/:id
-DELETE /user/delete/:id
-```
-  #### Trainer
-```javascript
-GET /alltrainer
-```
 
 <div align = "center">  
 
