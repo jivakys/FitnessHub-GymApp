@@ -7,7 +7,6 @@ const mailOrderDetail = (order, classes, user, trainer) => {
     auth: {
       user: process.env.EMAIL_ADDRESS,
       pass: process.env.EMAIL_PASSWORD,
-
     },
   });
 
@@ -47,8 +46,8 @@ const mailOrderDetail = (order, classes, user, trainer) => {
       to: user.email,
       from: "process.env.EMAIL_ADDRESS",
       subject: "Congratulations! Order successful from Fitness-Hub..",
-      text: "from Workout Fitness Center",
-      
+      text: "from Workout Fitness Club",
+
       html: `
         <h1>Hello ${user.name}</h1>
         <p>Thank you for booking a fitness class with us.</p>

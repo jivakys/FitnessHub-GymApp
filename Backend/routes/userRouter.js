@@ -1,12 +1,10 @@
-// all user routes here
+const express = require("express");
+require("dotenv").config();
 const { UserModel } = require("../models/userModel");
 const { client } = require("../config/redisDB");
-const express = require("express");
 const bcrypt = require("bcrypt");
-require("dotenv").config();
 const jwt = require("jsonwebtoken");
 let { get_date, get_time } = require("../utils/date_time");
-
 const userRouter = express.Router();
 
 // ....User Page start here....//
@@ -67,7 +65,7 @@ userRouter.post("/register", async (req, res) => {
       res.status(400).send({ error: "User already registered in Database" });
     } else {
       console.log("check");
-      bcrypt.hash(password, +process.env.salt, async function (err, hash) {
+      bcrypt.hash(password, +process.env.SALT, async function (err, hash) {
         if (err) {
           res
             .status(401)
@@ -113,12 +111,12 @@ userRouter.post("/login", async (req, res) => {
         if (result) {
           var token = jwt.sign(
             { userID: user._id, role: user.role, name: user.name },
-            process.env.secretKey,
+            process.env.SECRET_KEY,
             { expiresIn: "7d" }
           );
           var refresh_token = jwt.sign(
             { userID: user._id, role: user.role, name: user.name },
-            process.env.refreshSecretKey,
+            process.env.REFRESH_SECRETKEY,
             { expiresIn: "30d" }
           );
           await client.HSET("token", email, token);
