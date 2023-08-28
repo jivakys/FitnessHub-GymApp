@@ -1,4 +1,4 @@
-let url = "https://tame-gray-eagle-gown.cyclic.cloud/"
+let url = "https://hilarious-ruby-camel.cyclic.cloud";
 // "http://localhost:3456";
 
 let boxContainer = document.querySelector("#trainers .box-container");

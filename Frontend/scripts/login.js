@@ -5,7 +5,7 @@ let loding_container = document.getElementById("loding_container");
 let google_button = document.querySelector("#login-google-button");
 
 google_button.addEventListener("click", async () => {
-  window.location = "https://tame-gray-eagle-gown.cyclic.cloud/auth/google";
+  window.location = "https://hilarious-ruby-camel.cyclic.cloud//auth/google";
 });
 
 const onLogin = () => {
@@ -31,7 +31,7 @@ const onLogin = () => {
   }
 
   loding_container.style.display = "block";
-  fetch("https://tame-gray-eagle-gown.cyclic.cloud/user/login", {
+  fetch("https://hilarious-ruby-camel.cyclic.cloud/user/login", {
     method: "POST",
     headers: {
       "Content-type": "application/json",

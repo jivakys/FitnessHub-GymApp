@@ -29,7 +29,7 @@ const onSignUp = () => {
     return;
   }
 
-  fetch("https://tame-gray-eagle-gown.cyclic.cloud/user/register", {
+  fetch("https://hilarious-ruby-camel.cyclic.cloud/user/register", {
     method: "POST",
     headers: {
       "Content-type": "application/json",

@@ -1,4 +1,4 @@
-let baseURL = "https://tame-gray-eagle-gown.cyclic.cloud";
+let baseURL = "https://hilarious-ruby-camel.cyclic.cloud";
 
 let loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
 if (!loggedInUser) {
