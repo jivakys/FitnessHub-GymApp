@@ -56,7 +56,6 @@ async function getAllClass() {
     }
   } catch (error) {
     loding_container.style.display = "none";
-    // alert("Server not responding");
     swal({
       text: "Server not responding",
       icon: "error",
@@ -70,7 +69,6 @@ async function getAllClass() {
 let allclassescard = document.getElementById("cardcontainer");
 function renderAllData(data) {
   let allData = data;
-  // console.log(data)
   allclassescard.innerHTML = "";
   let map_allData = allData.map((elem) => {
     return `  <div class="card">
@@ -123,7 +121,6 @@ searchbar.addEventListener("input", (event) => {
 
 function searchalldata(event) {
   let searchdata = event.target.value;
-  // console.log(newData)
   let temp = newData.filter(function (elem) {
     let ans =
       elem.locationOrLink.toLowerCase().includes(searchdata.toLowerCase()) ||

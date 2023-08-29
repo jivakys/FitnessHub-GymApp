@@ -5,7 +5,6 @@ if (!loggedInUser) {
   window.location.href = "../index.html";
 }
 let loggedInUserEmail = loggedInUser.email;
-
 let loding_container = document.getElementById("loding_container");
 
 // .......................................Navbar........................................................
