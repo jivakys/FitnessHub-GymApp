@@ -137,6 +137,28 @@
 
 /**
  * @swagger
+ * components:
+ *   schema:
+ *     Admin:
+ *       type: object
+ *       required:
+ *         - name
+ *         - email
+ *         - password
+ *       properties:
+ *         name:
+ *           type: string
+ *           description: The name of the admin
+ *         email:
+ *           type: string
+ *           description: The email of the admin
+ *         password:
+ *           type: string
+ *           description: The admin password
+ */
+
+/**
+ * @swagger
  * /user/all:
  *   get:
  *       summary: To retrieve information about all the users who are registered in the database.
@@ -512,3 +534,43 @@
  */
 
 // Admin ______________________________________________________________________________________________
+
+/**
+ * @swagger
+ * /admin/signin:
+ *   post:
+ *       summary: To log in as an administrator in the database for accessing its features.
+ *       tags: [Admin]
+ *       requestBody:
+ *           required: true
+ *           content:
+ *               application/json:
+ *                   schema:
+ *                       $ref: '#/components/schema/Admin'
+ *       responses:
+ *           200:
+ *               description: Admin registered successfully
+ *               content:
+ *                   application/json:
+ *                       schema:
+ *                           $ref: '#/components/schema/Admin'
+ *           400:
+ *               description: Some server error
+ */
+
+/**
+ * @swagger
+ * /admin/all:
+ *   get:
+ *       summary: Displaying information about all users.
+ *       tags: [Admin]
+ *       responses:
+ *           200:
+ *               description: Data for all users has been successfully obtained.
+ *               content:
+ *                   application/json:
+ *                       schema:
+ *                           $ref: '#/components/schema/Admin'
+ *           400:
+ *               description: Some Server error
+ */

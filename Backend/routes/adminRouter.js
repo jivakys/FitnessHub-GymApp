@@ -40,12 +40,8 @@ dashboardRouter.post("/signup", async (req, res) => {
 });
 
 dashboardRouter.get("/all", async (req, res) => {
-  // res.status(200).send({message:"Details of Users, Trainers, Classes etc.."}) all details we can access from here..//
-
   try {
     let users = await UserModel.find({ role: "client" });
-
-    // console.log(users)
 
     res.send({
       msg: "..Dashboard Report Done..",
