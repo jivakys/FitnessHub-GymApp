@@ -1,4 +1,3 @@
-// all classes  model here
 const mongoose = require("mongoose");
 
 const classesSchema = mongoose.Schema(

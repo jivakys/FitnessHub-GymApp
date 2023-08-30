@@ -53,8 +53,39 @@ app.get(
     res.redirect("www.google.com");
   }
 );
-
 //...............google oath End ...........//
+
+//SWAGGER________________________________________________________________
+
+const swaggerJSDoc = require("swagger-jsdoc");
+const swaggerUi = require("swagger-ui-express");
+const options = {
+  definition: {
+    openapi: "3.0.0",
+    info: {
+      title: "Fitness-Hub Project API's",
+      version: "1.0.0",
+      description:
+        "About : - Documentation of application Fitness-Hub which is a Fitness class Booking application in which you can join class of Top quality Trainers or become a Trainer itself.",
+      license: {
+        name: "Fitness-Hub",
+      },
+      contact: {
+        name: "Fitness-Hub",
+        url: "FitnessHub.com",
+        email: "Fitnesshub@gmail.com",
+      },
+    },
+    servers: [
+      {
+        url: `http://localhost:${process.env.PORT}`,
+      },
+    ],
+  },
+  apis: ["./routes/*.js"],
+};
+const swaggerSpec = swaggerJSDoc(options);
+app.use("/apidocs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 //..........server part start..........//
 app.listen(process.env.PORT, async () => {
