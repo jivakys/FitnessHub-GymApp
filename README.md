@@ -1,4 +1,5 @@
 ## ABOUT THE PROJECT
+
 <h1> Fitness-Hub </h1>
 
 <div align="center"  width="55" height="55">
@@ -11,21 +12,19 @@
 </div>
 
 | `Demo` |
-| :----: | 
-   
+| :----: |
 
 [FRONTEND - NETLIFY](https://64ec32328c80145abe2c0486--tubular-unicorn-50d6e4.netlify.app/)
 
 [BACKEND - CYCLIC](https://hilarious-ruby-camel.cyclic.cloud/)
 
- 
 | `Authors` |
-| :-------: | 
+| :-------: |
 
- [JIVAK SUTE](https://github.com/jivakys) 
- 
- [MAHENDRA MOHANE](https://github.com/Mahendra-mohane) 
- 
+[JIVAK SUTE](https://github.com/jivakys)
+
+[MAHENDRA MOHANE](https://github.com/Mahendra-mohane)
+
 ## TECH STACKS USED
 
 <p align = "center">
@@ -40,43 +39,40 @@
 </p>
 <hr>
 
-## Features 
--  Authentication
--  Registeration/Signin/Logout
--  Different Interface for both Users and Trainers
--  API Validation
--  Class Creation 
--  Class Booking
--  Responsive
+## Features
+
+- Authentication
+- Registeration/Signin/Logout
+- Different Interface for both Users and Trainers
+- API Validation
+- Class Creation
+- Class Booking
+- Responsive
 
 ## Run Locally
+
 ### Clone this Project
 
 ```
 https://github.com/jivakys/truculent-face-1803
 ```
 
-### Install npm Packages
-
-```javascript
-npm i --global
-```
-
-### Go to Backend Folder
-```javascript
-cd Backend
-```
-
 ### Run Server
+
 ```javascript
-npx nodemon index.js
+npm nodemon index.js
 ```
+
 ### Runs the project in the development mode
 
 [http://localhost:3456](http://localhost:3456)
 
+### Swagger API Documentation
+
+[API Check here](http://localhost:3456/apidocs/)
 
 ## NPM Packages
+
 <p align = "center">
 <img src="https://repository-images.githubusercontent.com/139898859/9617c480-81c2-11ea-94fc-322231ead1f0" alt="bcrypt.png" width="70" height="50"/>
 <img src="https://github.com/faraz412/cozy-passenger-4798/blob/main/Frontend/Files/cors.png?raw=true" alt="cors" width="70" height="50"/>
@@ -86,11 +82,10 @@ npx nodemon index.js
 <img src="https://user-images.githubusercontent.com/13700/35731649-652807e8-080e-11e8-88fd-1b2f6d553b2d.png" alt="nodemon.png" width="50" height="50"/>
 </p>
 
-
-<div align = "center">  
+<div align = "center">
 
 | `Project Highlights` |
-| :------------------: | 
+| :------------------: |
 
  <div align = "center">
    <h2>Landing Page</h2>
@@ -116,6 +111,3 @@ npx nodemon index.js
    <br>
   <div/>
   <br>
-
-
- 

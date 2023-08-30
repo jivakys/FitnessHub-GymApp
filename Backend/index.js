@@ -72,7 +72,7 @@ const options = {
       },
       contact: {
         name: "Fitness-Hub",
-        url: "FitnessHub.com",
+        url: "https://64ec32328c80145abe2c0486--tubular-unicorn-50d6e4.netlify.app/",
         email: "Fitnesshub@gmail.com",
       },
     },
