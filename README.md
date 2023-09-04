@@ -7,23 +7,22 @@
   <br>
   <br>
   <p>Welcome to Fitness-Hub, the ultimate wellness and gym app designed to help users and certified fitness trainers to get together and work on the fitness goal on one platform.</p>
-  <br>
   <p>Our system provides a user-friendly platform that enables users to browse, book, and cancel fitness classes with ease. Our platform empowers trainers to create classes with comprehensive information such as class time, venue, date, and more. Additionally, all-encompassing administrative interface that enables authorized personnel to perform a wide range of operations.</p>
 </div>
 
 | `Demo` |
 | :----: |
 
-[FRONTEND - NETLIFY](https://64ec32328c80145abe2c0486--tubular-unicorn-50d6e4.netlify.app/)
+[FRONTEND - NETLIFY LINK](https://64ec32328c80145abe2c0486--tubular-unicorn-50d6e4.netlify.app/)
 
-[BACKEND - CYCLIC](https://hilarious-ruby-camel.cyclic.cloud/)
+[BACKEND - CYCLIC LINK](https://hilarious-ruby-camel.cyclic.cloud/)
 
 | `Authors` |
 | :-------: |
 
-[JIVAK SUTE](https://github.com/jivakys)
+💠[JIVAK SUTE](https://github.com/jivakys)
 
-[MAHENDRA MOHANE](https://github.com/Mahendra-mohane)
+💠[MAHENDRA MOHANE](https://github.com/Mahendra-mohane)
 
 ## TECH STACKS USED
 
