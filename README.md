@@ -13,9 +13,9 @@
 | `Demo` |
 | :----: |
 
-[FRONTEND - NETLIFY LINK](https://64ec32328c80145abe2c0486--tubular-unicorn-50d6e4.netlify.app/)
+[FRONTEND - VERCEL LINK](https://fitneeshub.vercel.app/)
 
-[BACKEND - CYCLIC LINK](https://hilarious-ruby-camel.cyclic.cloud/)
+[BACKEND - CYCLIC LINK](https://jittery-clam-underclothes.cyclic.app/)
 
 | `Authors` |
 | :-------: |
