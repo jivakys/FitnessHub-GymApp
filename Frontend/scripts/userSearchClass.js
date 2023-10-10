@@ -46,7 +46,6 @@ async function getAllClass() {
         renderAllData(res.classes);
       });
     } else {
-      // alert("Classes Not Fetched")
       swal({
         text: "Classes Not Fetched",
         icon: "error",

@@ -13,7 +13,7 @@
 | `Demo` |
 | :----: |
 
-[FRONTEND - VERCEL LINK](https://fitneeshub.vercel.app/)
+[FRONTEND - VERCEL LINK](https://fitnesshub-ivory.vercel.app/)
 
 [BACKEND - CYCLIC LINK](https://jittery-clam-underclothes.cyclic.app/)
 
@@ -46,6 +46,7 @@
 - API Validation
 - Class Creation
 - Class Booking
+- Admin Page
 - Responsive
 
 ## Run Locally
