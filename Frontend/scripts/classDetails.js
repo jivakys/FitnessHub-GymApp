@@ -1,5 +1,5 @@
 // import baseURL from "./baseURL";
-const baseURL = "https://hilarious-ruby-camel.cyclic.cloud";
+const baseURL = "https://jittery-clam-underclothes.cyclic.app";
 let loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
 if (!loggedInUser) {
   window.location.href = "../index.html";

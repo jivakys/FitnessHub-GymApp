@@ -104,7 +104,6 @@ async function getClass(id) {
 let divForRender = document.getElementById("cardcontainer");
 
 async function renderderAllData(allData) {
-  // console.log(allData)
   divForRender.innerHTML = "";
   let map_allData = allData.map((elem) => {
     return `<div class="card">

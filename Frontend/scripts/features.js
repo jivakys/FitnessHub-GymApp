@@ -1,5 +1,4 @@
-let url = "https://hilarious-ruby-camel.cyclic.cloud";
-// "http://localhost:3456";
+let url = "https://jittery-clam-underclothes.cyclic.app";
 
 let boxContainer = document.querySelector("#trainers .box-container");
 

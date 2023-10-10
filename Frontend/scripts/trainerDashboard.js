@@ -1,5 +1,4 @@
-let baseURL = "https://hilarious-ruby-camel.cyclic.cloud";
-// "http://localhost:3456";
+let baseURL = "https://jittery-clam-underclothes.cyclic.app";
 
 let loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
 if (!loggedInUser) {

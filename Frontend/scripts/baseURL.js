@@ -1,2 +1,2 @@
-let baseURL = "https://hilarious-ruby-camel.cyclic.cloud";
+let baseURL = "https://jittery-clam-underclothes.cyclic.app";
 export default baseURL;

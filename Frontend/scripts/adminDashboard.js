@@ -1,4 +1,4 @@
-const baseURL = `https://hilarious-ruby-camel.cyclic.cloud`;
+const baseURL = `https://jittery-clam-underclothes.cyclic.app`;
 
 let depObj = {
   1: "Online",
