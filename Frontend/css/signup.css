@@ -12,18 +12,19 @@ body {
   width: 20%;
   height: 8vh;
   margin-left: 38%;
+  border-radius: 10px;
 }
 
 #signup-heading {
   text-align: center;
   font-size: 40px;
-  color: #000;
+  color: #ff004f;
   font-weight: bold;
 }
 
 #form {
   width: 50%;
-  min-height: fit-content;
+  min-height: 100vh;
   margin: auto;
   opacity: 0.9;
   margin-top: 20px;
@@ -82,6 +83,12 @@ label {
   padding-left: 10%;
   border: 2px solid #000;
 }
+#genderAndrole {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+}
 
 #role,
 #gender {
@@ -95,17 +102,8 @@ label {
   cursor: pointer;
 }
 
-#country1,
-#email {
-  width: 40%;
-  margin-left: 10%;
-  margin-top: 1%;
-  font-size: large;
-  cursor: pointer;
-}
 #select,
 #select2 {
-  font-size: large;
   cursor: pointer;
 }
 
@@ -121,7 +119,7 @@ label {
   padding: 1%;
   width: 75%;
   margin-left: 10%;
-  margin-top: 7%;
+  margin-top: 5%;
   border: 2px solid white;
   background-color: #c11325;
   color: white;
@@ -133,12 +131,12 @@ label {
   cursor: pointer;
 }
 #back-to-login {
-  padding: 2%;
+  padding: 1%;
   border: 2px solid white;
   background-color: #c11325;
   color: white;
-  width: 70%;
-  height: 2vh;
+  width: 73%;
+  /* height: 1vh; */
   margin-left: 10%;
   border-radius: 20px;
   text-align: center;
@@ -147,36 +145,44 @@ label {
   cursor: pointer;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+/* .................... Media Query for Medium devices..................... */
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
   #container {
-    background-image: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
     padding: 1%;
     margin: -3%;
   }
   #logo {
-    width: 20%;
-    height: 8vh;
-    margin-left: 38%;
+    width: 30%;
+    height: 6vh;
+    margin-left: 37%;
+    border-radius: 10px;
   }
 
   #signup-heading {
     text-align: center;
-    font-size: 40px;
-    color: #c11325;
+    font-size: 35px;
+    color: #ff004f;
+    font-weight: bold;
+    margin: 8px;
+    letter-spacing: 0px;
   }
 
   #form {
-    width: 60%;
+    width: 65%;
     margin: auto;
     margin-top: 30px;
-    height: 100vh;
+    height: 90vh;
     padding-top: 1%;
     padding-bottom: 2%;
-    font-family: cursive;
     background-color: whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  label {
+    font-size: 17px;
   }
   #name,
   #pass,
@@ -186,45 +192,29 @@ label {
   #bottom {
     display: flex;
     gap: 20px;
-    font-size: large;
     margin-left: 10%;
   }
 
   #firstName,
   #lastName {
-    margin-top: 5%;
+    margin-top: 3%;
     width: 75%;
     height: 4vh;
     border-radius: 20px;
     padding-left: 10%;
     letter-spacing: 1px;
     border: 2px solid black;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  #signup-password {
-    margin-top: 5%;
-    width: 150%;
-    height: 4vh;
-    border-radius: 20px;
-    padding-left: 10%;
-    letter-spacing: 1px;
-    border: 2px solid black;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
   #Email {
-    margin-top: 5%;
+    margin-top: 3%;
     width: 175%;
     height: 4vh;
+
     border-radius: 20px;
     letter-spacing: 2px;
     padding-left: 10%;
     border: 2px solid black;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
   #email {
@@ -234,6 +224,41 @@ label {
     font-size: large;
     cursor: pointer;
   }
+  #signup-password {
+    margin-top: 3%;
+    width: 150%;
+    height: 4vh;
+    border-radius: 20px;
+    padding-left: 10%;
+    letter-spacing: 1px;
+    border: 2px solid black;
+  }
+
+  #genderAndrole {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+  }
+
+  #role,
+  #gender {
+    margin-top: 0%;
+    width: 120%;
+    height: 5vh;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    padding-left: 10%;
+    border: 2px solid #000;
+    cursor: pointer;
+  }
+
+  #select,
+  #select2 {
+    margin-left: 0px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
 
   #sign-upButton {
     padding: 1%;
@@ -241,12 +266,13 @@ label {
     margin-left: 10%;
     margin-top: 7%;
     border: 2px solid black;
-    background-color: #ff004f;
-    color: rgb(0, 0, 0);
+    background-color: #c11325;
+    color: white;
     letter-spacing: 2px;
     font-size: 15px;
-    font-weight: 50px;
-    height: 6vh;
+    font-weight: bold;
+    /* height: 5vh; */
+    padding: 2px;
     border-radius: 20px;
     cursor: pointer;
   }
@@ -262,34 +288,37 @@ label {
   }
 }
 
+/* .................... Media Query for small devices..................... */
+
 @media screen and (min-width: 100px) and (max-width: 600px) {
   #container {
-    background-image: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
     padding: 1%;
     margin: -3%;
   }
   #logo {
-    width: 50%;
-    height: 8vh;
-    margin-left: 25%;
+    width: 30%;
+    height: 6vh;
+    margin-left: 35%;
+    border-radius: 10px;
   }
 
   #signup-heading {
     text-align: center;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    font-size: 40px;
+    font-size: 28px;
+    font-weight: bold;
     color: #ff004f;
+    margin: 15px;
+    letter-spacing: -1px;
   }
 
   #form {
-    width: 60%;
+    width: 80%;
     margin: auto;
     margin-top: 30px;
     height: 100vh;
+    padding: 5px;
     padding-top: 1%;
     padding-bottom: 10%;
-    font-family: cursive;
     background-color: whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -304,74 +333,97 @@ label {
     display: flex;
     gap: 20px;
     font-size: large;
-    margin-left: 10%;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   #firstName,
   #lastName {
-    margin-top: 5%;
+    margin-top: 2%;
     width: 75%;
-    height: 4vh;
+    height: 3vh;
     border-radius: 20px;
-    padding-left: 10%;
-    letter-spacing: 1px;
+    padding-left: 10px;
+    padding-right: 2px;
+    letter-spacing: 0px;
+    margin-top: 2px;
     border: 2px solid black;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  #signup-password {
-    margin-top: 5%;
-    width: 70%;
-    height: 4vh;
-    border-radius: 20px;
-    padding-left: 10%;
-    letter-spacing: 1px;
-    border: 2px solid black;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  #Email {
-    margin-top: 5%;
-    width: 175%;
-    height: 4vh;
-    border-radius: 20px;
-    letter-spacing: 2px;
-    padding-left: 10%;
-    border: 2px solid black;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
   #email {
-    width: 39%;
-    margin-left: 10%;
+    width: 42%;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  #Email {
+    width: 190%;
+    height: 3vh;
+    border-radius: 20px;
+    letter-spacing: 0px;
+    padding-left: 10px;
+    margin-top: 2px;
+    border: 2px solid black;
+  }
+
+  #signup-password {
+    width: 100%;
+    height: 3vh;
+    border-radius: 20px;
+    padding-left: 10px;
+    letter-spacing: 0px;
+    margin-top: 2px;
+    border: 2px solid black;
+  }
+
+  #genderAndrole {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+  }
+
+  #role,
+  #gender {
     margin-top: 1%;
-    font-size: large;
+    width: 100%;
+    height: 4vh;
+    border-radius: 20px;
+    letter-spacing: 0px;
+    padding: 2px;
+    padding-left: 10%;
+    border: 2px solid #000;
+    cursor: pointer;
+  }
+
+  #select,
+  #select2 {
+    margin-left: 0px;
+    margin-right: 15px;
     cursor: pointer;
   }
 
   #sign-upButton {
-    padding: 1%;
+    padding: 2%;
     width: 75%;
     margin-left: 10%;
-    margin-top: 7%;
+    margin-top: 8%;
     border: 2px solid black;
-    background-color: #ff004f;
-    color: rgb(0, 0, 0);
+    background-color: #c11325;
+    color: white;
     letter-spacing: 2px;
     font-size: 15px;
-    font-weight: 50px;
-    height: 6vh;
+    font-weight: bold;
+    height: 5vh;
     border-radius: 20px;
     cursor: pointer;
   }
   #back-to-login {
-    padding: 2%;
+    padding: 1%;
     border: 2px solid black;
-    width: 70%;
-    height: 2vh;
+    width: 71%;
+    height: 3vh;
     margin-left: 10%;
     margin-bottom: 5%;
     border-radius: 20px;
