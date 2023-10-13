@@ -3,7 +3,7 @@
 <h1> Fitness-Hub </h1>
 
 <div align="center"  width="55" height="55">
-  <img src="Frontend/images/Fitness-Hub-Logo.jpg" alt="html" width="200" height="100"/>
+  <img src="Frontend/images/Fitness-Hub-Logo.jpg" alt="html" width="200" height="90"/>
   <br>
   <br>
   <p>Welcome to Fitness-Hub, the ultimate wellness and gym app designed to help users and certified fitness trainers to get together and work on the fitness goal on one platform.</p>
@@ -54,7 +54,7 @@
 ### Clone this Project
 
 ```
-https://github.com/jivakys/truculent-face-1803
+https://github.com/jivakys/FitnessHub-GymApp
 ```
 
 ### Run Server
