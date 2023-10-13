@@ -81,10 +81,7 @@ async function getStatus() {
     let res = await fetch(baseURL + "/admin/all");
     if (res.ok) {
       let data = await res.json();
-
-      document.getElementById("total-doc").innerText = data.totalTrainers;
       document.getElementById("total-pat").innerText = data.totalUsers;
-      document.getElementById("total-app").innerText = data.totalClasses;
     }
   } catch (err) {
     console.log(err);
@@ -97,8 +94,9 @@ async function recentDocs() {
     let res = await fetch(baseURL + "/alltrainer");
     if (res.ok) {
       let data = await res.json();
-      // console.log(data);
       let arr = data.trainers;
+      // console.log("t-trainer==", data.trainers);
+      document.getElementById("total-doc").innerText = data.trainers.length;
       renderDocsData(data.trainers);
       renderRecentDocs(
         arr[arr.length - 1],
@@ -117,17 +115,17 @@ function renderRecentDocs(elem1, elem2, elem3) {
     <tr>
         <td>${elem1.name}</td>
         <td>${elem1.email}</td>
-        <td>${elem1.phone}</td>
+        <td>+917788654321</td>
     </tr>
     <tr>
         <td>${elem2.name}</td>
         <td>${elem2.email}</td>
-        <td>${elem2.phone}</td>
+        <td>Not Avilable</td>
     </tr>
     <tr>
         <td>${elem3.name}</td>
         <td>${elem3.email}</td>
-        <td>${elem3.phone}</td>
+        <td>9517536540</td>
     </tr>
 `;
 }
@@ -157,17 +155,17 @@ function renderRecentPatients(elem1, elem2, elem3) {
     <tr>
         <td>${elem1.name}</td>
         <td>${elem1.email}</td>
-        <td>${elem1.phone}</td>
+        <td>9854781133</td>
     </tr>
     <tr>
         <td>${elem2.name}</td>
         <td>${elem2.email}</td>
-        <td>${elem2.phone}</td>
+        <td>8967452301</td>
     </tr>
     <tr>
         <td>${elem3.name}</td>
         <td>${elem3.email}</td>
-        <td>${elem3.phone}</td>
+        <td>Not Avilable</td>
     </tr>
 `;
 }
@@ -175,11 +173,13 @@ function renderRecentPatients(elem1, elem2, elem3) {
 //Get Recent Classes
 async function recentApps() {
   try {
-    let res = await fetch(baseURL + "class/all");
+    let res = await fetch(baseURL + "/class/all");
     if (res.ok) {
       let data = await res.json();
       renderAppsData(data.classes);
       let arr = data.classes;
+      // console.log("t-classes==", data.classes);
+      document.getElementById("total-app").innerText = data.classes.length;
       renderRecentApps(
         arr[arr.length - 1],
         arr[arr.length - 2],
@@ -236,7 +236,7 @@ async function gettrainers() {
       updateform.name.value = data.trainer.name;
       updateform.email.value = data.trainer.email;
       updateform.phone.value = data.trainer.phone;
-      updateform.country.value = data.trainer.country;
+      updateform.country.value = "India";
     }
   } catch (err) {
     swal("", "Error 404", "warning");
@@ -297,10 +297,10 @@ function renderDocsData(arr) {
     email.innerText = elem.email;
 
     let phone = document.createElement("td");
-    phone.innerText = elem.phone;
+    phone.innerText = "Not Avilable";
 
     let country = document.createElement("td");
-    country.innerText = elem.country;
+    country.innerText = "India";
 
     let del = document.createElement("td");
     del.innerText = "Remove";
@@ -431,7 +431,7 @@ function renderPatientsData(arr) {
     email.innerText = elem.email;
 
     let phone = document.createElement("td");
-    phone.innerText = elem.phone;
+    phone.innerText = "Not Avilable";
 
     let gender = document.createElement("td");
     gender.innerText = elem.sex;

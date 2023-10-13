@@ -17,7 +17,7 @@ const onLogin = () => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Please fill all the details....",
+      text: "Please Complete All Required Fields.",
     });
     return;
   }
