@@ -118,7 +118,7 @@ function createRow(el) {
     }>Cancel</button><button class="update-btn options" onclick="updateClass(event)"  data-id=${
     el._id
   } >Update</button></div>
-		<a href=""> <button class="detail-btn options" > Details </button></a>
+		<a href="./trainerSingleClass.html?id=${id}"> <button class="detail-btn options" > Details </button></a>
 		</div></td>
 
 	</tr>`;
@@ -170,9 +170,9 @@ async function DeleteClass(event) {
   }
 }
 
-// function RedirectClassPage(id) {
-//   window.location.assign(`./trainerSingleClass.html?id=${id}`);
-// }
+function RedirectClassPage(id) {
+  window.location.assign(`./trainerSingleClass.html?id=${id}`);
+}
 
 // Classes List
 renderTables();
@@ -230,7 +230,6 @@ function renderTables() {
     bodyTextTypes[i].setAttribute("data-title", headTitleTypes.innerText);
     bodyTextUpdate[i].setAttribute("data-title", headTitleUpdate.innerText);
     bodyTextCountry[i].setAttribute("data-title", headTitleCountry.innerText);
-    // bodyTextDelete[i].setAttribute("data-title", headTitleDelete.innerText);
   }
 }
 
