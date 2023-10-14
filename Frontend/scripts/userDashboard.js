@@ -1,4 +1,4 @@
-import baseURL from "./baseURL.js";
+var baseURL = "https://jittery-clam-underclothes.cyclic.app";
 
 let menu = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".header .navbar");
