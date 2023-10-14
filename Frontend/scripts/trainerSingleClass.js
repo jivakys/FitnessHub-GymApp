@@ -164,7 +164,7 @@ async function renderAllData(classes, trainerInfo) {
                    </div>
                    <div id="trainerheadinfo">
                        <h4>${trainerInfo.name}</h4>
-                       <h4>${trainerInfo.country}</h4>
+                       <h4>India</h4>
                        <h4>${
                          trainerInfo.phone ? trainerInfo.phone : "Not Provided"
                        }</h4>
@@ -302,6 +302,8 @@ function rederActDesc(activity) {
       "Boxing requires speed, agility, strength, power, and cardiovascular fitness. The focus of strength training workouts is usually on improving coordination, power, and speed of force development rather than on building muscle mass and gaining size.",
     crossfit:
       "A form of high intensity interval training, CrossFit is a strength and conditioning workout that is made up of functional movement performed at a high intensity level. These movements are actions that you perform in your day-to-day life, like squatting, pulling, pushing etc.",
+    football:
+      "Playing football is equivalent to muscular strength exercises (anaerobic) such as running at high speed and lifting weights. As these types of exercises help to burn body fat as much as possible, the risk of heart disease and the accumulation of fat in the blood vessels are eliminated.",
     cycling:
       "Cycling is mainly an aerobic activity, which means that your heart, blood vessels and lungs all get a workout. You will breathe deeper, perspire and experience increased body temperature, which will improve your overall fitness level. ",
     weighttraining:
