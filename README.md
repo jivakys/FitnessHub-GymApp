@@ -13,9 +13,9 @@
 | `Demo` |
 | :----: |
 
-[FRONTEND - VERCEL LINK](https://fitnesshub-ivory.vercel.app/)
+[FRONTEND - VERCEL LINK](https://fitnesshub-zbc9-1oosmnqdi-jivakys-projects.vercel.app/)
 
-[BACKEND - CYCLIC LINK](https://jittery-clam-underclothes.cyclic.app/)
+[BACKEND - RAILWAY LINK](https://fitnesshub-backend-production.up.railway.app/)
 
 | `Authors` |
 | :-------: |
