@@ -1,71 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/login.css" />
-    <title>Fitness-Hub | Login</title>
-    <link rel="icon" href="../images/Fitness-Hub-Logo.jpg" />
-  </head>
-  <body>
-    <div id="loding_container">
-      <div id="loding_div">
-        <img src="../images/loding.gif" alt="loading" srcset="" />
-        <h2>Please Wait...</h2>
-      </div>
-    </div>
-    <div id="login-container">
-      <div id="login-form">
-        <div id="logo_img">
-          <a href="../index.html"
-            ><img src="../images/Fitness-Hub-Logo.jpg" alt="logo" id="logo" />
-          </a>
-        </div>
-        <div>
-          <p id="login-heading">Welcome to Fitness-Hub</p>
-        </div>
-        <div id="signin">
-          <div>
-            <label id="login-email-label">Email Address:</label> <br />
-            <input
-              type="email"
-              placeholder="Enter your email"
-              id="login-email"
-              required
-            />
-            <br />
-            <br />
-            <label id="login-password-label">Password:</label> <br />
-            <input
-              type="password"
-              placeholder="Enter your password"
-              id="login-password"
-              required
-            />
-            <i
-              class="far fa-eye"
-              id="togglePassword"
-              style="margin-left: -30px; cursor: pointer"
-            ></i>
-            <br />
-            <br />
-          </div>
-          <div id="button">
-            <button id="login-button" onclick="onLogin()">Log In</button>
-          </div>
-          <p id="create-an-account">Create an account↪️</p>
-        </div>
 
-        <div class="icons">
-          <img
-            src="https://i.stack.imgur.com/VS53t.png"
-            id="login-google-button"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <title>Fitness-Hub | Login</title>
+  <link rel="icon" href="../images/Fitness-Hub-Logo.jpg" />
+</head>
+
+<body>
+  <div id="loding_container">
+    <div id="loding_div">
+      <img src="../images/loding.gif" alt="loading" srcset="" />
+      <h2>Please Wait...</h2>
+    </div>
+  </div>
+  <div id="login-container">
+    <div id="login-form">
+      <div id="logo_img">
+        <a href="../index.html"><img src="../images/Fitness-Hub-Logo.jpg" alt="logo" id="logo" />
+        </a>
+      </div>
+      <div>
+        <p id="login-heading">Welcome to Fitness-Hub</p>
+      </div>
+      <div id="signin">
+        <div>
+          <label id="login-email-label">Email Address:</label> <br />
+          <input type="email" placeholder="Enter your email" id="login-email" required />
+          <br />
+          <br />
+          <label id="login-password-label">Password:</label> <br />
+          <input type="password" placeholder="Enter your password" id="login-password" required />
+          <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer"></i>
+          <br />
+          <br />
         </div>
+        <div id="button">
+          <button id="login-button" onclick="onLogin()">Log In</button>
+        </div>
+        <p id="create-an-account">Create an account↪️</p>
+      </div>
+
+      <div class="icons">
+        <img src="../images/loginwithGoogle.png" id="login-google-button" />
       </div>
     </div>
-    <script src="../scripts/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </body>
+  </div>
+  <script src="../scripts/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
 </html>
