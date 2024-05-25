@@ -1,4 +1,4 @@
-var baseURL = "https://jittery-clam-underclothes.cyclic.app";
+var baseURL = "https://fitnesshub-backend-production.up.railway.app";
 
 let menu = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".header .navbar");

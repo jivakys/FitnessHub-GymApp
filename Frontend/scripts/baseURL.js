@@ -1,2 +1,2 @@
-let baseURL = "https://jittery-clam-underclothes.cyclic.app";
+let baseURL = "https://fitnesshub-backend-production.up.railway.app";
 export default baseURL;

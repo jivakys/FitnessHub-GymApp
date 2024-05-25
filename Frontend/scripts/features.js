@@ -1,4 +1,4 @@
-let url = "https://jittery-clam-underclothes.cyclic.app";
+let url = "https://fitnesshub-backend-production.up.railway.app";
 
 let boxContainer = document.querySelector("#trainers .box-container");
 
