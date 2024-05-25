@@ -50,8 +50,8 @@ const onLogin = () => {
         });
 
         setTimeout(() => {
-          window.location.href = "signup.html";
-        }, 4000);
+          window.location.href = "login.html";
+        }, 3000);
 
         return;
       }

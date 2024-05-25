@@ -1,6 +1,7 @@
 let baseURL = "https://jittery-clam-underclothes.cyclic.app";
 
 let loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+// console.log("user==", loggedInUser);
 if (!loggedInUser) {
   window.location.href = "../index.html";
 }
@@ -73,6 +74,44 @@ async function getAllClassLength() {
   }
 }
 
+// async function getOneTrainerClassLength(event) {
+//   try {
+//     let id = event.target.getAttribute("data-id");
+//     loding_container.style.display = "block";
+//     let dataFetch = await fetch(baseURL + `/searchByTrainerID/${id}`, {
+//       headers: {
+//         authorization: `Bearer ${loggedInUserEmail}`,
+//       },
+//     });
+//     if (dataFetch.ok) {
+//       let temp = dataFetch.json().then((res) => {
+//         loding_container.style.display = "none";
+//         newData = res.classes;
+//         renderClassInfo(newData.length);
+//       });
+//     } else {
+//       // alert("Classes Not Fetched")
+//       loding_container.style.display = "none";
+//       swal({
+//         text: "Classes Not Fetched",
+//         icon: "error",
+//         button: "ok",
+//         timer: 1000,
+//       });
+//     }
+//   } catch (error) {
+//     // alert("Server not responding");
+//     loding_container.style.display = "none";
+//     swal({
+//       text: "Server not responding",
+//       icon: "error",
+//       button: "ok",
+//       timer: 1000,
+//     });
+//     console.log(error.message);
+//   }
+// }
+
 function renderClassInfo(totallength) {
   document.getElementById("total-class").innerText = totallength;
 }
@@ -120,7 +159,6 @@ function createRow(el) {
   } >Update</button></div>
 		<a href="./trainerSingleClass.html?id=${id}"> <button class="detail-btn options" > Details </button></a>
 		</div></td>
-
 	</tr>`;
 }
 

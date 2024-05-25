@@ -44,7 +44,7 @@ function validateEmail() {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Please enter a valid Email Address.",
+      text: "Please Enter a Valid Email Address.",
     });
     emailInput.focus();
     return false;
