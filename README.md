@@ -15,7 +15,7 @@
 
 [FRONTEND - VERCEL LINK](https://fitnesshub-project.vercel.app/)
 
-[BACKEND - RAILWAY LINK](https://fitnesshub-backend-production.up.railway.app/)
+[BACKEND - RENDER LINK](https://fitnesshub-backend.onrender.com/)
 
 | `Authors` |
 | :-------: |
