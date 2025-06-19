@@ -1,4 +1,4 @@
-const baseURL = "https://fitnesshub-backend-production.up.railway.app";
+const baseURL = "https://fitnesshub-backend.onrender.com";
 
 let loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
 if (!loggedInUser) {

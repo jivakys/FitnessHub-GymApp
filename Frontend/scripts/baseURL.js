@@ -1,2 +1,2 @@
-let baseURL = "https://fitnesshub-backend-production.up.railway.app";
+let baseURL = "https://fitnesshub-backend.onrender.com";
 export default baseURL;

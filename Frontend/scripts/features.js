@@ -1,4 +1,4 @@
-let url = "https://fitnesshub-backend-production.up.railway.app";
+let url = "https://fitnesshub-backend.onrender.com";
 
 let boxContainer = document.querySelector("#trainers .box-container");
 

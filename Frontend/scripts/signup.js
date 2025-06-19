@@ -107,16 +107,13 @@ const onSignUp = () => {
       return;
     }
 
-    fetch(
-      "https://fitnesshub-backend-production.up.railway.app/user/register",
-      {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      }
-    )
+    fetch("https://fitnesshub-backend.onrender.com/user/register", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
       .then((res) => res.json())
       .then((res) => {
         console.log(res);

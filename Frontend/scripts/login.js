@@ -5,8 +5,7 @@ let loding_container = document.getElementById("loding_container");
 let google_button = document.querySelector("#login-google-button");
 
 google_button.addEventListener("click", async () => {
-  window.location =
-    "https://fitnesshub-backend-production.up.railway.app/auth/google";
+  window.location = "https://fitnesshub-backend.onrender.com/auth/google";
 });
 
 const onLogin = () => {
@@ -32,7 +31,7 @@ const onLogin = () => {
   }
 
   loding_container.style.display = "block";
-  fetch("https://fitnesshub-backend-production.up.railway.app/user/login", {
+  fetch("https://fitnesshub-backend.onrender.com/user/login", {
     method: "POST",
     headers: {
       "Content-type": "application/json",

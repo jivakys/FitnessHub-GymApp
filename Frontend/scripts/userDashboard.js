@@ -1,4 +1,4 @@
-var baseURL = "https://fitnesshub-backend-production.up.railway.app";
+var baseURL = "https://fitnesshub-backend.onrender.com";
 
 let menu = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".header .navbar");
